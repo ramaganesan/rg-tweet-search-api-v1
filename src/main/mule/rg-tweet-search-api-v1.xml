@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd 
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+    
+    
+	<flow name="rg-tweet-search-api-v1-main">
+        <http:listener config-ref="rg-tweet-search-api-v1-httpListenerConfig" path="/*">
+            <http:response statusCode="#[vars.httpStatus default 200]">
+                <http:headers><![CDATA[#[vars.outboundHeaders default {}]]]></http:headers>
+            </http:response>
+            <http:error-response statusCode="#[vars.httpStatus default 500]">
+                <http:body><![CDATA[#[payload]]]></http:body>
+                <http:headers><![CDATA[#[vars.outboundHeaders default {}]]]></http:headers>
+            </http:error-response>
+        </http:listener>
+        <apikit:router config-ref="rg-tweet-search-api-v1-config" />
+        <error-handler>
+            <on-error-propagate type="APIKIT:BAD_REQUEST">
+                <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" doc:id="f9baa6e6-5bdd-4682-8a94-abfa43d7e902">
+                    <ee:message>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[400]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+				<flow-ref doc:name="apikit-400-error-subflow" doc:id="bab66aa3-a91c-4d84-8ef1-a160a395c4f8" name="apikit-400-error-subflow"/>
+            </on-error-propagate>
+            <on-error-propagate type="APIKIT:NOT_FOUND">
+                <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" doc:id="29a1d79b-54a8-4036-87de-3bd3318f87e2">
+                    <ee:message>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[404]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+				<flow-ref doc:name="apikit-400-error-subflow" doc:id="6699f548-ef76-4761-b54a-e3a51576c4dd" name="apikit-400-error-subflow"/>
+            </on-error-propagate>
+            <on-error-propagate type="APIKIT:METHOD_NOT_ALLOWED">
+                <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" doc:id="97472e47-a950-4d6f-8bc0-8aee4fb167c3">
+                    <ee:message>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[405]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+				<flow-ref doc:name="apikit-400-error-subflow" doc:id="8b59c04c-3c74-4f98-bc99-c9016778c28a" name="apikit-400-error-subflow"/>
+            </on-error-propagate>
+            <on-error-propagate type="APIKIT:NOT_ACCEPTABLE">
+                <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" doc:id="dbe5f7e4-14fc-434b-97b6-bafefacbd5ce">
+                    <ee:message>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[406]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+				<flow-ref doc:name="apikit-400-error-subflow" doc:id="19c658e4-a427-422b-9343-6c1fa0daca95" name="apikit-400-error-subflow"/>
+            </on-error-propagate>
+            <on-error-propagate type="APIKIT:UNSUPPORTED_MEDIA_TYPE">
+                <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" doc:id="dca9d5b8-77f7-4b7d-bd5e-3917a42233be">
+                    <ee:message>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[415]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+				<flow-ref doc:name="apikit-400-error-subflow" doc:id="bfa72ccc-2974-43fe-b2c3-6daefaa22936" name="apikit-400-error-subflow"/>
+            </on-error-propagate>
+            <on-error-propagate type="APIKIT:NOT_IMPLEMENTED">
+                <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd" doc:id="164c6414-9494-4f4d-8444-cd6577e5cfc9">
+                    <ee:message>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[501]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+				<flow-ref doc:name="apikit-400-error-subflow" doc:id="8cfc2e26-9936-4cb5-a340-01189a3f81eb" name="apikit-400-error-subflow"/>
+            </on-error-propagate>
+        </error-handler>
+    </flow>
+    <!-- <flow name="rg-tweet-search-api-v1-console">
+        <http:listener config-ref="rg-tweet-search-api-v1-httpListenerConfig" path="/console/*">
+            <http:response statusCode="#[vars.httpStatus default 200]">
+                <http:headers>#[vars.outboundHeaders default {}]</http:headers>
+            </http:response>
+            <http:error-response statusCode="#[vars.httpStatus default 500]">
+                <http:body>#[payload]</http:body>
+                <http:headers>#[vars.outboundHeaders default {}]</http:headers>
+            </http:error-response>
+        </http:listener>
+        <apikit:console config-ref="rg-tweet-search-api-v1-config" />
+        <error-handler>
+            <on-error-propagate type="APIKIT:NOT_FOUND">
+                <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+-&#45;&#45;
+{message: "Resource not found"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus">404</ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+        </error-handler>
+    </flow> -->
+    <flow name="get:\tweets\hashtags:rg-tweet-search-api-v1-config">
+		<set-variable value="#[attributes.queryParams.'keyword']" doc:name="Set Variable-keyword" doc:id="98f99471-0197-4c57-a9a4-707eb8dcbd69" variableName="keyword" />
+		<flow-ref doc:name="twitter-hashtags-api-process-request" doc:id="2551319b-dc1c-46c8-8f81-6c55d680fa42" name="twitter-hashtags-api-process-request"/>
+    </flow>
+    <flow name="get:\tweets:rg-tweet-search-api-v1-config">
+		<set-variable value="#[attributes.queryParams.'keyword']" doc:name="Set Variable-keyword" doc:id="278d37cb-2218-4290-bbb1-efa01fc9a126" variableName="keyword"/>
+		<set-variable value="#[attributes.queryParams.'hours']" doc:name="Set Variable-hours" doc:id="374a82f1-a820-4e6f-9272-001de0ea51a2" variableName="hours"/>
+		<flow-ref doc:name="twitter-search-api-process-request" doc:id="9255551d-c98d-45b3-834e-7ff8776c6c0a" name="twitter-search-api-process-request"/>
+    </flow>
+</mule>

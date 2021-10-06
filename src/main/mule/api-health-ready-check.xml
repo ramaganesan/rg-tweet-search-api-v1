@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd 
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	
+	<flow name="rg-tweet-search-api-v1-healthcheck" doc:id="e6f89ca0-478a-4a32-9bb9-9f69754e93e7" >
+		<http:listener doc:name="Listener" doc:id="6c68e263-b18e-4b08-a750-9fec0843c3b4" config-ref="rg-tweet-search-api-v1-httpListenerConfig" path="/health">
+			<http:response statusCode="#[vars.httpStatus default 200]" />
+		</http:listener>
+		<ee:transform doc:name="Status Message" doc:id="f52b766e-2bae-4f7b-b1bd-e95b9be52c35" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	status : 'UP'
+}]]></ee:set-payload>
+			</ee:message>
+			<ee:variables >
+				<ee:set-variable variableName="httpStatus" ><![CDATA[%dw 2.0
+output application/java
+---
+200]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+	</flow>
+	<flow name="rg-tweet-search-api-v1-ready" doc:id="b8765592-b88c-454e-8b79-cd1056d04768" >
+		<http:listener doc:name="Listener" doc:id="02cba94a-7e93-46e2-9c1e-01bf0770d6eb" config-ref="rg-tweet-search-api-v1-httpListenerConfig" path="/ready">
+			<http:response statusCode="#[vars.httpStatus default 200]" />
+		</http:listener>
+		<http:request method="GET" doc:name="Twitter-Status-Endpoint" doc:id="c5dd8bc1-9113-4246-8d42-58fe7a94f11e" config-ref="Twitter-Status-EndPoint-Request-Config" path="/" sendCorrelationId="AUTO" correlationId="#[correlationId]" responseTimeout="${twitter.statusendpoint.responseTimeout-inmsec}">
+			<http:headers ><![CDATA[#[{
+	Accept : "application/json"
+}]]]></http:headers>
+		</http:request>
+		<ee:transform doc:name="Check Status of Standard API" doc:id="2f146ab0-ed3e-4653-9f9b-7516bf9413ac" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+payload.components filter ((item, index) -> item.status == 'operational' and item.id == p('twitter.statusendpoint.searchapi.id'))]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<choice doc:name="Choice" doc:id="5f613fa8-6ceb-4d88-ac95-d91b4d02b9e6" >
+			<when expression="#[isEmpty(payload)]">
+				<ee:transform doc:name="Set Not Ready Message" doc:id="479ce26b-07e1-4752-bb6c-82f04ee6beda">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+	ready : 'NO'
+}]]></ee:set-payload>
+			</ee:message>
+			<ee:variables>
+				<ee:set-variable variableName="httpStatus"><![CDATA[%dw 2.0
+output application/java
+---
+503]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="Transform Message" doc:id="dfd7fa68-daff-439d-bdde-53a85575412d" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	ready : 'YES'
+}]]></ee:set-payload>
+					</ee:message>
+					<ee:variables >
+						<ee:set-variable variableName="httpStatus" ><![CDATA[%dw 2.0
+output application/java
+---
+200]]></ee:set-variable>
+					</ee:variables>
+				</ee:transform>
+			</otherwise>
+		</choice>
+		<error-handler >
+			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="055d2ca0-fec3-48b8-a383-238122622db0" type="ANY">
+				<ee:transform doc:name="Set Not Ready Message" doc:id="eca8d352-71ab-43be-b813-a2b95afca2b2" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	ready : 'NO'
+}]]></ee:set-payload>
+					</ee:message>
+					<ee:variables >
+						<ee:set-variable variableName="httpStatus" ><![CDATA[%dw 2.0
+output application/java
+---
+503]]></ee:set-variable>
+					</ee:variables>
+				</ee:transform>
+			</on-error-continue>
+		</error-handler>
+	
+</flow>
+	
+	</mule>

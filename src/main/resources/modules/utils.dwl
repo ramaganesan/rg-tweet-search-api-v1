@@ -1,0 +1,1 @@
+fun formatStringToDateTime(dataIn, format) = dataIn as DateTime {format: format}

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="rg-tweet-hashtags-process-flows-test-suite.xml" />
+	<import doc:name="Import" doc:id="1f717c3c-4a37-4788-a86f-44ad3cdb118b" file="test-config-load.xml" />
+	<munit:test name="twitter-hashtags-api-process-request-AvailableDataTest" doc:id="9122ebee-a0d4-4221-b869-b3974b29b452">
+	  <munit:behavior >
+			<munit-tools:mock-when doc:name="Mock Twitter API Search Request and Call Mock data Flow" doc:id="91903448-778e-4ab9-89b8-864af5194728" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Twitter-Standard-SearchAPI-Request" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-call flow="create-twittersearch-api-mockdata" />
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Variables Keyword and Hours" doc:id="4e7987be-e04b-4af9-90ca-18336493519d" >
+				<munit:variables >
+					<munit:variable key="keyword" value="mulesoft" />
+				</munit:variables>
+			</munit:set-event>
+			<set-variable value="#['HASHTAGS']" doc:name="Set Variable-searchType" doc:id="134c50be-15b0-40ca-b333-c45a8798f22f" variableName="searchType"/>
+			<flow-ref doc:name="Flow-ref to twitter-hashtags-api-process-request" doc:id="14e427eb-02fb-4cce-965e-3a0cb5494dda" name="twitter-hashtags-api-process-request"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify Set API Response Transform Component is called" doc:id="6ae992da-bfbf-42a8-9f77-63be19e1c19d" processor="ee:transform" times="#[1]">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Set API Response" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+			<munit-tools:assert-that doc:name="Assert that payload.hashtags is equal to 7" doc:id="0f48a2d3-2292-45e9-b7fc-22aaa76834b0" message="Twitter Search API response is not correct" expression="#[sizeOf(payload.hashtags)]" is="#[MunitTools::equalTo(7)]"/>
+		</munit:validation>
+	</munit:test>
+	
+	<munit:test name="twitter-hashtags-api-process-request-NoDataTest" doc:id="1f74f1e6-0c0b-4c6f-b7ac-24c3a787d47c">
+	  <munit:behavior >
+			<munit-tools:mock-when doc:name="Mock Twitter API Search Request and Call Mock data Flow" doc:id="3f5654a1-42a5-47d8-a598-fdd011697723" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Twitter-Standard-SearchAPI-Request" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-call flow="create-twittersearch-api-mocknodata" />
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Variables Keyword and Hours" doc:id="bb1bfe28-fcdf-4576-926d-ac52b2e2b1d1" >
+				<munit:variables >
+					<munit:variable key="keyword" value="mulesoft" />
+				</munit:variables>
+			</munit:set-event>
+			<set-variable value="#['HASHTAGS']" doc:name="Set Variable-searchType" doc:id="2a46f4e4-738c-4812-959c-91a1e7a02c8f" variableName="searchType"/>
+			<flow-ref doc:name="Flow-ref to twitter-hashtags-api-process-request" doc:id="5779d27f-bc67-46a5-b8ff-042a6bfe3254" name="twitter-hashtags-api-process-request"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify Set Payload as Empty Hashtags Transform Component is called" doc:id="c98881f2-80b8-4c35-ba01-44a80d5becbd" processor="ee:transform" times="#[1]">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Set Payload as Empty Hashtags" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+			<munit-tools:assert-that doc:name="Assert that payload.hashtags is equal to 0" doc:id="df5dbd58-aa85-49b8-b77f-e94a40cd5b1a" message="Twitter Search API response is not correct" expression="#[sizeOf(payload.hashtags)]" is="#[MunitTools::equalTo(0)]"/>
+		</munit:validation>
+	</munit:test>
+	
+	<munit:test name="twitter-hashtags-api-process-request-TwitterAPICompressionErrorTest" doc:id="4347245e-98d9-48cf-bc0c-ec3a09a0aa22" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock Twitter API Search Request and Call Mock data Flow" doc:id="931b3ebb-b7c3-419c-ac8a-1cdd3570c0ef" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Twitter-Standard-SearchAPI-Request" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('sample_data\\twitter-search-api-hashtags-results.json')]" mediaType="application/json" />
+				</munit-tools:then-return>
+			
+
+</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Variables Keyword and Hours" doc:id="72a6d5ae-a1b3-47e7-91bc-43d39b3d8656" >
+				<munit:variables >
+					<munit:variable key="keyword" value="mulesoft" />
+				</munit:variables>
+			</munit:set-event>
+			<try doc:name="Try" doc:id="be3c46a7-15b0-4ef9-a535-2f7e51aac93d" >
+				<flow-ref doc:name="Flow-ref to twitter-hashtags-api-process-request" doc:id="528505ab-3941-47d5-afbe-3ac01efe8e72" name="twitter-hashtags-api-process-request"/>
+				<error-handler >
+					<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="b6883eb1-d7b4-41d4-8749-6df78d7cadf8" />
+				</error-handler>
+			</try>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify process error is called" doc:id="22257177-870a-4fd8-be63-69062b6b1d86" processor="flow-ref" times="#[1]">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="process-error" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+
+			</munit-tools:verify-call>
+			<munit-tools:assert-that doc:name="Assert that error code is TWITTER_API_RESPONSE_ERROR Code" doc:id="55ae1960-116a-4531-9b8f-88168065f73a" message="Twitter Search API error response is not correct" expression="#[payload.error.errorCode]" is="#[MunitTools::equalTo('TWITTER_API_RESPONSE_ERROR')]"/>
+		</munit:validation>
+	</munit:test>
+	
+	<munit:test name="twitter-hashtags-api-process-request-ExpressionErrorTest" doc:id="eeda46f1-c689-4cf6-91e5-7ebfd5f441b4" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock Flow twitter-search-api-httprequest" doc:id="c90fe3e9-dd60-464e-b937-e46dcbc278d7" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="twitter-search-api-httprequest" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('sample_data\\twitter-search-api-hashtags-results.json')]" mediaType="application/json" />
+				</munit-tools:then-return>
+			
+
+</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="Mock flow twitter-hasgtags-process-results" doc:id="ff2e3117-3525-4d75-a825-2c7b92d45721" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="twitter-hasgtags-process-results" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="MULE:EXPRESSION" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		
+</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Variables Keyword and Hours" doc:id="6470b9dc-46a3-445b-8a89-b8a6db4c8b05" >
+				<munit:variables >
+					<munit:variable key="keyword" value="mulesoft" />
+				</munit:variables>
+			</munit:set-event>
+			<try doc:name="Try" doc:id="c5b21521-64f0-42a8-90be-264308f98407" >
+				<flow-ref doc:name="Flow-ref to twitter-hashtags-api-process-request" doc:id="0d5534c6-db5c-4ec6-af0e-a9660b27e916" name="twitter-hashtags-api-process-request" />
+				<error-handler >
+					<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="a8ecddd7-1c8e-47aa-a84a-46fce836fe9c" />
+				</error-handler>
+			</try>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify process error is called" doc:id="a9cb2f26-7a14-4dee-87b8-bc76f029f134" processor="flow-ref" times="#[1]">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="process-error" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+
+			</munit-tools:verify-call>
+			<munit-tools:assert-that doc:name="Assert that error code is PROCESS_RESULT_ERROR Code" doc:id="59ee50e8-f322-4b45-9336-685b2bdc9f02" message="Twitter Search API error response is not correct" expression="#[payload.error.errorCode]" is="#[MunitTools::equalTo('PROCESS_RESULT_ERROR')]"/>
+		</munit:validation>
+	</munit:test>
+
+
+</mule>

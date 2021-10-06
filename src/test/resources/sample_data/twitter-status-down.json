@@ -1,0 +1,2051 @@
+{
+    "page": {
+        "id": "zjttvm6ql9lp",
+        "name": "Twitter",
+        "url": "https://api.twitterstat.us"
+    },
+    "status": {
+        "indicator": "none",
+        "description": "All Systems Operational"
+    },
+    "components": [
+        {
+            "status": "operational",
+            "name": "Enterprise Volume Streams & PowerTrack",
+            "created_at": "2017-01-24T22:36:30.951Z",
+            "updated_at": "2021-09-20T20:39:25.048Z",
+            "position": 1,
+            "description": "Status of the enterprise Firehose API, language Firehose APIs, Compliance Firehose API, Decahose API, Streaming Likes API, and PowerTrack API",
+            "showcase": false,
+            "start_date": null,
+            "id": "d3dy5wnlksk5",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Enterprise and Premium Historical APIs",
+            "created_at": "2017-01-24T22:37:17.075Z",
+            "updated_at": "2021-09-20T20:39:25.063Z",
+            "position": 2,
+            "description": "Status of the enterprise and premium Search APIs, PowerTrack Replay API & Historical PowerTrack API.",
+            "showcase": false,
+            "start_date": null,
+            "id": "3x8mkkdmgyx2",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Enterprise and Premium Account Activity API",
+            "created_at": "2017-10-19T19:17:06.772Z",
+            "updated_at": "2021-09-20T20:39:25.077Z",
+            "position": 3,
+            "description": "Status of the enterprise and premium Account Activity API.",
+            "showcase": false,
+            "start_date": null,
+            "id": "ymnbbmqyj85q",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Enterprise Engagement API",
+            "created_at": "2019-11-08T23:01:30.648Z",
+            "updated_at": "2021-09-20T20:39:25.096Z",
+            "position": 4,
+            "description": "Status of the enterprise Engagement API.",
+            "showcase": false,
+            "start_date": null,
+            "id": "01z2fwxmxh3w",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Enterprise Usage API",
+            "created_at": "2018-09-25T03:35:08.754Z",
+            "updated_at": "2021-09-20T20:39:25.110Z",
+            "position": 5,
+            "description": "Status of the enterprise Usage API.",
+            "showcase": false,
+            "start_date": null,
+            "id": "lqfdjsbsdhh4",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Ads API",
+            "created_at": "2019-11-07T21:09:34.352Z",
+            "updated_at": "2021-09-20T20:39:25.128Z",
+            "position": 6,
+            "description": "Status of the Ads API.",
+            "showcase": false,
+            "start_date": null,
+            "id": "jl4kwnm98bjc",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "noit-operational",
+            "name": "Standard endpoints",
+            "created_at": "2017-10-13T22:01:35.698Z",
+            "updated_at": "2021-09-20T20:39:25.142Z",
+            "position": 7,
+            "description": "Status of standard v1.1 endpoints, including but not limited to: search/tweets, followers/ids, friends/ids, users/lookup, statuses/home_timeline, statuses/user_timeline, statuses/mentions_timeline, trends/place, trends/available, trends/closest, statuses/sample and statuses/filter.",
+            "showcase": false,
+            "start_date": null,
+            "id": "c96z76knv2sh",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Standard statuses/update endpoints",
+            "created_at": "2020-07-15T23:38:14.466Z",
+            "updated_at": "2021-09-20T20:39:25.207Z",
+            "position": 8,
+            "description": null,
+            "showcase": false,
+            "start_date": null,
+            "id": "z834hjvg9xq9",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Media endpoints",
+            "created_at": "2020-07-17T09:12:25.782Z",
+            "updated_at": "2021-09-20T20:39:25.222Z",
+            "position": 9,
+            "description": "Status of the media endpoints.",
+            "showcase": false,
+            "start_date": null,
+            "id": "gnjl0cn4wg4f",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "v2 streaming Tweets endpoints",
+            "created_at": "2020-08-12T17:01:59.676Z",
+            "updated_at": "2021-09-20T20:39:25.239Z",
+            "position": 10,
+            "description": null,
+            "showcase": false,
+            "start_date": null,
+            "id": "51tmw9t8mbd1",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "v2 RESTful Tweets endpoints",
+            "created_at": "2020-08-12T17:02:16.053Z",
+            "updated_at": "2021-09-28T22:13:32.166Z",
+            "position": 11,
+            "description": null,
+            "showcase": false,
+            "start_date": null,
+            "id": "90zr377yq7f4",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "v2 RESTful users endpoints",
+            "created_at": "2020-08-12T17:02:27.625Z",
+            "updated_at": "2021-09-28T22:13:32.179Z",
+            "position": 12,
+            "description": null,
+            "showcase": false,
+            "start_date": null,
+            "id": "89bkgylxd73c",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Premium billing",
+            "created_at": "2019-04-12T17:06:41.414Z",
+            "updated_at": "2021-09-17T20:19:22.113Z",
+            "position": 13,
+            "description": "Status of the premium billing service.",
+            "showcase": false,
+            "start_date": null,
+            "id": "pw1bgwtrwvym",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Twitter Developer Labs",
+            "created_at": "2020-02-12T02:43:50.018Z",
+            "updated_at": "2021-09-20T20:39:25.283Z",
+            "position": 14,
+            "description": "Status of the Labs Tweet lookup, User lookup, Recent search, Filtered stream, Sampled stream, Hide replies, and COVID-19 stream endpoints.",
+            "showcase": false,
+            "start_date": null,
+            "id": "thk57zbdpmzt",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Enterprise Console",
+            "created_at": "2018-10-09T17:28:06.203Z",
+            "updated_at": "2021-09-17T20:19:22.135Z",
+            "position": 15,
+            "description": "Status of the enterprise console, living at console.gnip.com.",
+            "showcase": false,
+            "start_date": null,
+            "id": "7dxq6mhr8cpf",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "Developer Portal",
+            "created_at": "2018-10-09T17:27:38.189Z",
+            "updated_at": "2021-09-17T20:19:22.146Z",
+            "position": 16,
+            "description": "Status of the developer portal, living at developer.twitter.com.",
+            "showcase": false,
+            "start_date": null,
+            "id": "gjsgfkz5bb76",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        },
+        {
+            "status": "operational",
+            "name": "v2 RESTful Spaces endpoints",
+            "created_at": "2021-08-30T16:35:06.047Z",
+            "updated_at": "2021-09-20T20:39:25.298Z",
+            "position": 17,
+            "description": null,
+            "showcase": false,
+            "start_date": "2021-08-30T00:00:00.000Z",
+            "id": "5c6cyd1cwnj8",
+            "page_id": "zjttvm6ql9lp",
+            "group_id": null
+        }
+    ],
+    "incidents": [
+        {
+            "name": "Investigating Possible Irregularity for oauth/access_token responses",
+            "status": "resolved",
+            "created_at": "2021-10-04T03:55:45.247Z",
+            "updated_at": "2021-10-04T22:56:44.325Z",
+            "monitoring_at": "2021-10-04T19:50:35.000Z",
+            "resolved_at": "2021-10-04T22:56:44.311Z",
+            "impact": "none",
+            "shortlink": "https://stspg.io/n63p765yxl8n",
+            "scheduled_for": null,
+            "scheduled_until": null,
+            "scheduled_remind_prior": false,
+            "scheduled_reminded_at": null,
+            "impact_override": null,
+            "scheduled_auto_in_progress": false,
+            "scheduled_auto_completed": false,
+            "metadata": {},
+            "started_at": "2021-10-04T03:55:45.237Z",
+            "id": "8tvtkby1svkv",
+            "page_id": "zjttvm6ql9lp",
+            "incident_updates": [
+                {
+                    "status": "resolved",
+                    "body": "This incident has been resolved.",
+                    "created_at": "2021-10-04T22:56:44.311Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-10-04T22:56:44.311Z",
+                    "display_at": "2021-10-04T22:56:44.311Z",
+                    "deliver_notifications": false,
+                    "tweet_id": null,
+                    "id": "hfcz1ch2splm",
+                    "incident_id": "8tvtkby1svkv",
+                    "custom_tweet": null,
+                    "affected_components": null
+                },
+                {
+                    "status": "monitoring",
+                    "body": "We have identified and believe to have addressed the issue which may have been causing 403 errors for the oauth/access_token requests.  Affected timeframe is predicted from about 2021-9-30 19:30 UTC -2021-10-3-17:00 UTC.",
+                    "created_at": "2021-10-04T19:50:35.531Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-10-04T22:28:43.580Z",
+                    "display_at": "2021-10-04T19:50:35.000Z",
+                    "deliver_notifications": false,
+                    "tweet_id": null,
+                    "id": "xx78hqlxy1lv",
+                    "incident_id": "8tvtkby1svkv",
+                    "custom_tweet": null,
+                    "affected_components": null
+                },
+                {
+                    "status": "investigating",
+                    "body": "The Twitter data team is investigating a possible system irregularity currently affecting the OAuth1.0a flow step oauth/access_token responses.  The presence and scope of any customer impact has not been determined at this time, but we will provide an update as soon as we know more.",
+                    "created_at": "2021-10-04T03:55:45.306Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-10-04T03:55:45.306Z",
+                    "display_at": "2021-10-04T03:55:45.306Z",
+                    "deliver_notifications": false,
+                    "tweet_id": null,
+                    "id": "yqhmp0pdp5sf",
+                    "incident_id": "8tvtkby1svkv",
+                    "custom_tweet": null,
+                    "affected_components": null
+                }
+            ],
+            "postmortem_body": null,
+            "postmortem_body_last_updated_at": null,
+            "postmortem_ignored": false,
+            "postmortem_published_at": null,
+            "postmortem_notified_subscribers": false,
+            "postmortem_notified_twitter": false,
+            "components": []
+        },
+        {
+            "name": "Delayed Jobs on Batch Compliance API",
+            "status": "resolved",
+            "created_at": "2021-09-28T21:51:30.044Z",
+            "updated_at": "2021-09-28T22:13:32.221Z",
+            "monitoring_at": null,
+            "resolved_at": "2021-09-28T22:13:32.207Z",
+            "impact": "minor",
+            "shortlink": "https://stspg.io/mxfsfnylklgb",
+            "scheduled_for": null,
+            "scheduled_until": null,
+            "scheduled_remind_prior": false,
+            "scheduled_reminded_at": null,
+            "impact_override": null,
+            "scheduled_auto_in_progress": false,
+            "scheduled_auto_completed": false,
+            "metadata": {},
+            "started_at": "2021-09-28T21:51:30.039Z",
+            "id": "vvzxz6m0czll",
+            "page_id": "zjttvm6ql9lp",
+            "incident_updates": [
+                {
+                    "status": "resolved",
+                    "body": "This incident has been resolved.",
+                    "created_at": "2021-09-28T22:13:32.207Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-09-28T22:13:32.207Z",
+                    "display_at": "2021-09-28T22:13:32.207Z",
+                    "deliver_notifications": false,
+                    "tweet_id": null,
+                    "id": "dwhlq15ym3ps",
+                    "incident_id": "vvzxz6m0czll",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "90zr377yq7f4",
+                            "name": "v2 RESTful Tweets endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "89bkgylxd73c",
+                            "name": "v2 RESTful users endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        }
+                    ]
+                },
+                {
+                    "status": "investigating",
+                    "body": "Starting around 17:45 UTC, we've experienced issues with the Batch Compliance API and are currently investigating. Jobs may be delayed once the IDs have been uploaded.",
+                    "created_at": "2021-09-28T21:51:30.119Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-09-28T21:51:30.119Z",
+                    "display_at": "2021-09-28T21:51:30.119Z",
+                    "deliver_notifications": false,
+                    "tweet_id": null,
+                    "id": "2q4kqd3w9glj",
+                    "incident_id": "vvzxz6m0czll",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "90zr377yq7f4",
+                            "name": "v2 RESTful Tweets endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "89bkgylxd73c",
+                            "name": "v2 RESTful users endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        }
+                    ]
+                }
+            ],
+            "postmortem_body": null,
+            "postmortem_body_last_updated_at": null,
+            "postmortem_ignored": false,
+            "postmortem_published_at": null,
+            "postmortem_notified_subscribers": false,
+            "postmortem_notified_twitter": false,
+            "components": [
+                {
+                    "status": "operational",
+                    "name": "v2 RESTful Tweets endpoints",
+                    "created_at": "2020-08-12T17:02:16.053Z",
+                    "updated_at": "2021-09-28T22:13:32.166Z",
+                    "position": 11,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "90zr377yq7f4",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "v2 RESTful users endpoints",
+                    "created_at": "2020-08-12T17:02:27.625Z",
+                    "updated_at": "2021-09-28T22:13:32.179Z",
+                    "position": 12,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "89bkgylxd73c",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                }
+            ]
+        },
+        {
+            "name": "Investigating Possible Irregularity for Twitter API",
+            "status": "resolved",
+            "created_at": "2021-09-20T19:24:48.434Z",
+            "updated_at": "2021-09-20T20:39:25.350Z",
+            "monitoring_at": null,
+            "resolved_at": "2021-09-20T20:39:25.332Z",
+            "impact": "minor",
+            "shortlink": "https://stspg.io/3m8dj68vdsk4",
+            "scheduled_for": null,
+            "scheduled_until": null,
+            "scheduled_remind_prior": false,
+            "scheduled_reminded_at": null,
+            "impact_override": null,
+            "scheduled_auto_in_progress": false,
+            "scheduled_auto_completed": false,
+            "metadata": {},
+            "started_at": "2021-09-20T19:24:48.422Z",
+            "id": "7sx0smxzx69r",
+            "page_id": "zjttvm6ql9lp",
+            "incident_updates": [
+                {
+                    "status": "resolved",
+                    "body": "All Twitter APIs are now operational.  Possible affected time frame from 18:45-19:30 UTC. Replay is available.",
+                    "created_at": "2021-09-20T20:39:25.332Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-09-20T20:39:25.332Z",
+                    "display_at": "2021-09-20T20:39:25.332Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "zqv2p16td3gx",
+                    "incident_id": "7sx0smxzx69r",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "d3dy5wnlksk5",
+                            "name": "Enterprise Volume Streams & PowerTrack",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "3x8mkkdmgyx2",
+                            "name": "Enterprise and Premium Historical APIs",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "c96z76knv2sh",
+                            "name": "Standard endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "ymnbbmqyj85q",
+                            "name": "Enterprise and Premium Account Activity API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "lqfdjsbsdhh4",
+                            "name": "Enterprise Usage API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "gjsgfkz5bb76",
+                            "name": "Developer Portal",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "7dxq6mhr8cpf",
+                            "name": "Enterprise Console",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "pw1bgwtrwvym",
+                            "name": "Premium billing",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "jl4kwnm98bjc",
+                            "name": "Ads API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "01z2fwxmxh3w",
+                            "name": "Enterprise Engagement API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "thk57zbdpmzt",
+                            "name": "Twitter Developer Labs",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "z834hjvg9xq9",
+                            "name": "Standard statuses/update endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "gnjl0cn4wg4f",
+                            "name": "Media endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "51tmw9t8mbd1",
+                            "name": "v2 streaming Tweets endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "90zr377yq7f4",
+                            "name": "v2 RESTful Tweets endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "89bkgylxd73c",
+                            "name": "v2 RESTful users endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "5c6cyd1cwnj8",
+                            "name": "v2 RESTful Spaces endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        }
+                    ]
+                },
+                {
+                    "status": "identified",
+                    "body": "The Twitter API team has identified a possible system irregularity currently affecting all Twitter API endpoints.  The presence and scope of any customer impact has not been determined at this time, but we will provide an update as soon as we know more.",
+                    "created_at": "2021-09-20T19:24:48.797Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-09-20T19:24:48.797Z",
+                    "display_at": "2021-09-20T19:24:48.797Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "xc94vqwq9lf7",
+                    "incident_id": "7sx0smxzx69r",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "d3dy5wnlksk5",
+                            "name": "Enterprise Volume Streams & PowerTrack",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "3x8mkkdmgyx2",
+                            "name": "Enterprise and Premium Historical APIs",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "c96z76knv2sh",
+                            "name": "Standard endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "ymnbbmqyj85q",
+                            "name": "Enterprise and Premium Account Activity API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "lqfdjsbsdhh4",
+                            "name": "Enterprise Usage API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "gjsgfkz5bb76",
+                            "name": "Developer Portal",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "7dxq6mhr8cpf",
+                            "name": "Enterprise Console",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "pw1bgwtrwvym",
+                            "name": "Premium billing",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "jl4kwnm98bjc",
+                            "name": "Ads API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "01z2fwxmxh3w",
+                            "name": "Enterprise Engagement API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "thk57zbdpmzt",
+                            "name": "Twitter Developer Labs",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "z834hjvg9xq9",
+                            "name": "Standard statuses/update endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "gnjl0cn4wg4f",
+                            "name": "Media endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "51tmw9t8mbd1",
+                            "name": "v2 streaming Tweets endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "90zr377yq7f4",
+                            "name": "v2 RESTful Tweets endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "89bkgylxd73c",
+                            "name": "v2 RESTful users endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "5c6cyd1cwnj8",
+                            "name": "v2 RESTful Spaces endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        }
+                    ]
+                }
+            ],
+            "postmortem_body": null,
+            "postmortem_body_last_updated_at": null,
+            "postmortem_ignored": false,
+            "postmortem_published_at": null,
+            "postmortem_notified_subscribers": false,
+            "postmortem_notified_twitter": false,
+            "components": [
+                {
+                    "status": "operational",
+                    "name": "Enterprise Volume Streams & PowerTrack",
+                    "created_at": "2017-01-24T22:36:30.951Z",
+                    "updated_at": "2021-09-20T20:39:25.048Z",
+                    "position": 1,
+                    "description": "Status of the enterprise Firehose API, language Firehose APIs, Compliance Firehose API, Decahose API, Streaming Likes API, and PowerTrack API",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "d3dy5wnlksk5",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise and Premium Historical APIs",
+                    "created_at": "2017-01-24T22:37:17.075Z",
+                    "updated_at": "2021-09-20T20:39:25.063Z",
+                    "position": 2,
+                    "description": "Status of the enterprise and premium Search APIs, PowerTrack Replay API & Historical PowerTrack API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "3x8mkkdmgyx2",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise and Premium Account Activity API",
+                    "created_at": "2017-10-19T19:17:06.772Z",
+                    "updated_at": "2021-09-20T20:39:25.077Z",
+                    "position": 3,
+                    "description": "Status of the enterprise and premium Account Activity API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "ymnbbmqyj85q",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise Engagement API",
+                    "created_at": "2019-11-08T23:01:30.648Z",
+                    "updated_at": "2021-09-20T20:39:25.096Z",
+                    "position": 4,
+                    "description": "Status of the enterprise Engagement API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "01z2fwxmxh3w",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise Usage API",
+                    "created_at": "2018-09-25T03:35:08.754Z",
+                    "updated_at": "2021-09-20T20:39:25.110Z",
+                    "position": 5,
+                    "description": "Status of the enterprise Usage API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "lqfdjsbsdhh4",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Ads API",
+                    "created_at": "2019-11-07T21:09:34.352Z",
+                    "updated_at": "2021-09-20T20:39:25.128Z",
+                    "position": 6,
+                    "description": "Status of the Ads API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "jl4kwnm98bjc",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Standard endpoints",
+                    "created_at": "2017-10-13T22:01:35.698Z",
+                    "updated_at": "2021-09-20T20:39:25.142Z",
+                    "position": 7,
+                    "description": "Status of standard v1.1 endpoints, including but not limited to: search/tweets, followers/ids, friends/ids, users/lookup, statuses/home_timeline, statuses/user_timeline, statuses/mentions_timeline, trends/place, trends/available, trends/closest, statuses/sample and statuses/filter.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "c96z76knv2sh",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Standard statuses/update endpoints",
+                    "created_at": "2020-07-15T23:38:14.466Z",
+                    "updated_at": "2021-09-20T20:39:25.207Z",
+                    "position": 8,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "z834hjvg9xq9",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Media endpoints",
+                    "created_at": "2020-07-17T09:12:25.782Z",
+                    "updated_at": "2021-09-20T20:39:25.222Z",
+                    "position": 9,
+                    "description": "Status of the media endpoints.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "gnjl0cn4wg4f",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "v2 streaming Tweets endpoints",
+                    "created_at": "2020-08-12T17:01:59.676Z",
+                    "updated_at": "2021-09-20T20:39:25.239Z",
+                    "position": 10,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "51tmw9t8mbd1",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "v2 RESTful Tweets endpoints",
+                    "created_at": "2020-08-12T17:02:16.053Z",
+                    "updated_at": "2021-09-28T22:13:32.166Z",
+                    "position": 11,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "90zr377yq7f4",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "v2 RESTful users endpoints",
+                    "created_at": "2020-08-12T17:02:27.625Z",
+                    "updated_at": "2021-09-28T22:13:32.179Z",
+                    "position": 12,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "89bkgylxd73c",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Premium billing",
+                    "created_at": "2019-04-12T17:06:41.414Z",
+                    "updated_at": "2021-09-17T20:19:22.113Z",
+                    "position": 13,
+                    "description": "Status of the premium billing service.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "pw1bgwtrwvym",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Twitter Developer Labs",
+                    "created_at": "2020-02-12T02:43:50.018Z",
+                    "updated_at": "2021-09-20T20:39:25.283Z",
+                    "position": 14,
+                    "description": "Status of the Labs Tweet lookup, User lookup, Recent search, Filtered stream, Sampled stream, Hide replies, and COVID-19 stream endpoints.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "thk57zbdpmzt",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise Console",
+                    "created_at": "2018-10-09T17:28:06.203Z",
+                    "updated_at": "2021-09-17T20:19:22.135Z",
+                    "position": 15,
+                    "description": "Status of the enterprise console, living at console.gnip.com.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "7dxq6mhr8cpf",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Developer Portal",
+                    "created_at": "2018-10-09T17:27:38.189Z",
+                    "updated_at": "2021-09-17T20:19:22.146Z",
+                    "position": 16,
+                    "description": "Status of the developer portal, living at developer.twitter.com.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "gjsgfkz5bb76",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "v2 RESTful Spaces endpoints",
+                    "created_at": "2021-08-30T16:35:06.047Z",
+                    "updated_at": "2021-09-20T20:39:25.298Z",
+                    "position": 17,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": "2021-08-30T00:00:00.000Z",
+                    "id": "5c6cyd1cwnj8",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                }
+            ]
+        },
+        {
+            "name": "Detected increase errors across Twitter APIs and Developer Portal",
+            "status": "resolved",
+            "created_at": "2021-09-17T18:47:20.015Z",
+            "updated_at": "2021-09-17T20:35:59.895Z",
+            "monitoring_at": "2021-09-17T20:19:22.184Z",
+            "resolved_at": "2021-09-17T20:35:59.882Z",
+            "impact": "minor",
+            "shortlink": "https://stspg.io/yvdb941jlmy4",
+            "scheduled_for": null,
+            "scheduled_until": null,
+            "scheduled_remind_prior": false,
+            "scheduled_reminded_at": null,
+            "impact_override": null,
+            "scheduled_auto_in_progress": false,
+            "scheduled_auto_completed": false,
+            "metadata": {},
+            "started_at": "2021-09-17T18:47:20.001Z",
+            "id": "5kdyglvrw8z5",
+            "page_id": "zjttvm6ql9lp",
+            "incident_updates": [
+                {
+                    "status": "resolved",
+                    "body": "We are fully operational across our APIs.",
+                    "created_at": "2021-09-17T20:35:59.882Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-09-17T20:35:59.882Z",
+                    "display_at": "2021-09-17T20:35:59.882Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "8ndx9fggjww1",
+                    "incident_id": "5kdyglvrw8z5",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "d3dy5wnlksk5",
+                            "name": "Enterprise Volume Streams & PowerTrack",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "3x8mkkdmgyx2",
+                            "name": "Enterprise and Premium Historical APIs",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "c96z76knv2sh",
+                            "name": "Standard endpoints",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "ymnbbmqyj85q",
+                            "name": "Enterprise and Premium Account Activity API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "lqfdjsbsdhh4",
+                            "name": "Enterprise Usage API",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "gjsgfkz5bb76",
+                            "name": "Developer Portal",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "7dxq6mhr8cpf",
+                            "name": "Enterprise Console",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "pw1bgwtrwvym",
+                            "name": "Premium billing",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "jl4kwnm98bjc",
+                            "name": "Ads API",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "01z2fwxmxh3w",
+                            "name": "Enterprise Engagement API",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "thk57zbdpmzt",
+                            "name": "Twitter Developer Labs",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "z834hjvg9xq9",
+                            "name": "Standard statuses/update endpoints",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "gnjl0cn4wg4f",
+                            "name": "Media endpoints",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "51tmw9t8mbd1",
+                            "name": "v2 streaming Tweets endpoints",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "90zr377yq7f4",
+                            "name": "v2 RESTful Tweets endpoints",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "89bkgylxd73c",
+                            "name": "v2 RESTful users endpoints",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "5c6cyd1cwnj8",
+                            "name": "v2 RESTful Spaces endpoints",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        }
+                    ]
+                },
+                {
+                    "status": "monitoring",
+                    "body": "Our Developer Portal and most of our Twitter APIs have recovered.\n\nWe are still experiencing some errors on Account Activity API and are looking into it.",
+                    "created_at": "2021-09-17T20:19:22.184Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-09-17T20:19:22.184Z",
+                    "display_at": "2021-09-17T20:19:22.184Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "18j8zsxhw7f2",
+                    "incident_id": "5kdyglvrw8z5",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "d3dy5wnlksk5",
+                            "name": "Enterprise Volume Streams & PowerTrack",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "3x8mkkdmgyx2",
+                            "name": "Enterprise and Premium Historical APIs",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "c96z76knv2sh",
+                            "name": "Standard endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "ymnbbmqyj85q",
+                            "name": "Enterprise and Premium Account Activity API",
+                            "old_status": "degraded_performance",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "lqfdjsbsdhh4",
+                            "name": "Enterprise Usage API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "gjsgfkz5bb76",
+                            "name": "Developer Portal",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "7dxq6mhr8cpf",
+                            "name": "Enterprise Console",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "pw1bgwtrwvym",
+                            "name": "Premium billing",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "jl4kwnm98bjc",
+                            "name": "Ads API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "01z2fwxmxh3w",
+                            "name": "Enterprise Engagement API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "thk57zbdpmzt",
+                            "name": "Twitter Developer Labs",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "z834hjvg9xq9",
+                            "name": "Standard statuses/update endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "gnjl0cn4wg4f",
+                            "name": "Media endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "51tmw9t8mbd1",
+                            "name": "v2 streaming Tweets endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "90zr377yq7f4",
+                            "name": "v2 RESTful Tweets endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "89bkgylxd73c",
+                            "name": "v2 RESTful users endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "5c6cyd1cwnj8",
+                            "name": "v2 RESTful Spaces endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        }
+                    ]
+                },
+                {
+                    "status": "investigating",
+                    "body": "We're experiencing an elevated level of errors across our Twitter APIs and Developer Portal starting around 18:16 UTC and are currently investigating. We are still determining the full scope of impact and will provide an update as soon as we know more.",
+                    "created_at": "2021-09-17T18:47:20.390Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-09-17T18:47:20.390Z",
+                    "display_at": "2021-09-17T18:47:20.390Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "87336rrtt1mx",
+                    "incident_id": "5kdyglvrw8z5",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "d3dy5wnlksk5",
+                            "name": "Enterprise Volume Streams & PowerTrack",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "3x8mkkdmgyx2",
+                            "name": "Enterprise and Premium Historical APIs",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "c96z76knv2sh",
+                            "name": "Standard endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "ymnbbmqyj85q",
+                            "name": "Enterprise and Premium Account Activity API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "lqfdjsbsdhh4",
+                            "name": "Enterprise Usage API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "gjsgfkz5bb76",
+                            "name": "Developer Portal",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "7dxq6mhr8cpf",
+                            "name": "Enterprise Console",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "pw1bgwtrwvym",
+                            "name": "Premium billing",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "jl4kwnm98bjc",
+                            "name": "Ads API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "01z2fwxmxh3w",
+                            "name": "Enterprise Engagement API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "thk57zbdpmzt",
+                            "name": "Twitter Developer Labs",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "z834hjvg9xq9",
+                            "name": "Standard statuses/update endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "gnjl0cn4wg4f",
+                            "name": "Media endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "51tmw9t8mbd1",
+                            "name": "v2 streaming Tweets endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "90zr377yq7f4",
+                            "name": "v2 RESTful Tweets endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "89bkgylxd73c",
+                            "name": "v2 RESTful users endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "5c6cyd1cwnj8",
+                            "name": "v2 RESTful Spaces endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        }
+                    ]
+                }
+            ],
+            "postmortem_body": null,
+            "postmortem_body_last_updated_at": null,
+            "postmortem_ignored": false,
+            "postmortem_published_at": null,
+            "postmortem_notified_subscribers": false,
+            "postmortem_notified_twitter": false,
+            "components": [
+                {
+                    "status": "operational",
+                    "name": "Enterprise Volume Streams & PowerTrack",
+                    "created_at": "2017-01-24T22:36:30.951Z",
+                    "updated_at": "2021-09-20T20:39:25.048Z",
+                    "position": 1,
+                    "description": "Status of the enterprise Firehose API, language Firehose APIs, Compliance Firehose API, Decahose API, Streaming Likes API, and PowerTrack API",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "d3dy5wnlksk5",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise and Premium Historical APIs",
+                    "created_at": "2017-01-24T22:37:17.075Z",
+                    "updated_at": "2021-09-20T20:39:25.063Z",
+                    "position": 2,
+                    "description": "Status of the enterprise and premium Search APIs, PowerTrack Replay API & Historical PowerTrack API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "3x8mkkdmgyx2",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise and Premium Account Activity API",
+                    "created_at": "2017-10-19T19:17:06.772Z",
+                    "updated_at": "2021-09-20T20:39:25.077Z",
+                    "position": 3,
+                    "description": "Status of the enterprise and premium Account Activity API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "ymnbbmqyj85q",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise Engagement API",
+                    "created_at": "2019-11-08T23:01:30.648Z",
+                    "updated_at": "2021-09-20T20:39:25.096Z",
+                    "position": 4,
+                    "description": "Status of the enterprise Engagement API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "01z2fwxmxh3w",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise Usage API",
+                    "created_at": "2018-09-25T03:35:08.754Z",
+                    "updated_at": "2021-09-20T20:39:25.110Z",
+                    "position": 5,
+                    "description": "Status of the enterprise Usage API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "lqfdjsbsdhh4",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Ads API",
+                    "created_at": "2019-11-07T21:09:34.352Z",
+                    "updated_at": "2021-09-20T20:39:25.128Z",
+                    "position": 6,
+                    "description": "Status of the Ads API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "jl4kwnm98bjc",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Standard endpoints",
+                    "created_at": "2017-10-13T22:01:35.698Z",
+                    "updated_at": "2021-09-20T20:39:25.142Z",
+                    "position": 7,
+                    "description": "Status of standard v1.1 endpoints, including but not limited to: search/tweets, followers/ids, friends/ids, users/lookup, statuses/home_timeline, statuses/user_timeline, statuses/mentions_timeline, trends/place, trends/available, trends/closest, statuses/sample and statuses/filter.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "c96z76knv2sh",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Standard statuses/update endpoints",
+                    "created_at": "2020-07-15T23:38:14.466Z",
+                    "updated_at": "2021-09-20T20:39:25.207Z",
+                    "position": 8,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "z834hjvg9xq9",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Media endpoints",
+                    "created_at": "2020-07-17T09:12:25.782Z",
+                    "updated_at": "2021-09-20T20:39:25.222Z",
+                    "position": 9,
+                    "description": "Status of the media endpoints.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "gnjl0cn4wg4f",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "v2 streaming Tweets endpoints",
+                    "created_at": "2020-08-12T17:01:59.676Z",
+                    "updated_at": "2021-09-20T20:39:25.239Z",
+                    "position": 10,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "51tmw9t8mbd1",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "v2 RESTful Tweets endpoints",
+                    "created_at": "2020-08-12T17:02:16.053Z",
+                    "updated_at": "2021-09-28T22:13:32.166Z",
+                    "position": 11,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "90zr377yq7f4",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "v2 RESTful users endpoints",
+                    "created_at": "2020-08-12T17:02:27.625Z",
+                    "updated_at": "2021-09-28T22:13:32.179Z",
+                    "position": 12,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "89bkgylxd73c",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Premium billing",
+                    "created_at": "2019-04-12T17:06:41.414Z",
+                    "updated_at": "2021-09-17T20:19:22.113Z",
+                    "position": 13,
+                    "description": "Status of the premium billing service.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "pw1bgwtrwvym",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Twitter Developer Labs",
+                    "created_at": "2020-02-12T02:43:50.018Z",
+                    "updated_at": "2021-09-20T20:39:25.283Z",
+                    "position": 14,
+                    "description": "Status of the Labs Tweet lookup, User lookup, Recent search, Filtered stream, Sampled stream, Hide replies, and COVID-19 stream endpoints.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "thk57zbdpmzt",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise Console",
+                    "created_at": "2018-10-09T17:28:06.203Z",
+                    "updated_at": "2021-09-17T20:19:22.135Z",
+                    "position": 15,
+                    "description": "Status of the enterprise console, living at console.gnip.com.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "7dxq6mhr8cpf",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Developer Portal",
+                    "created_at": "2018-10-09T17:27:38.189Z",
+                    "updated_at": "2021-09-17T20:19:22.146Z",
+                    "position": 16,
+                    "description": "Status of the developer portal, living at developer.twitter.com.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "gjsgfkz5bb76",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "v2 RESTful Spaces endpoints",
+                    "created_at": "2021-08-30T16:35:06.047Z",
+                    "updated_at": "2021-09-20T20:39:25.298Z",
+                    "position": 17,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": "2021-08-30T00:00:00.000Z",
+                    "id": "5c6cyd1cwnj8",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                }
+            ]
+        },
+        {
+            "name": "Decreased success rate for Spaces lookup by multiple IDs",
+            "status": "resolved",
+            "created_at": "2021-08-30T16:37:10.346Z",
+            "updated_at": "2021-09-10T16:02:10.854Z",
+            "monitoring_at": null,
+            "resolved_at": "2021-09-10T16:02:10.836Z",
+            "impact": "minor",
+            "shortlink": "https://stspg.io/y2m1kgx9p5hd",
+            "scheduled_for": null,
+            "scheduled_until": null,
+            "scheduled_remind_prior": false,
+            "scheduled_reminded_at": null,
+            "impact_override": null,
+            "scheduled_auto_in_progress": false,
+            "scheduled_auto_completed": false,
+            "metadata": {},
+            "started_at": "2021-08-30T16:37:10.341Z",
+            "id": "q576nbf9cdcm",
+            "page_id": "zjttvm6ql9lp",
+            "incident_updates": [
+                {
+                    "status": "resolved",
+                    "body": "This incident has been resolved.",
+                    "created_at": "2021-09-10T16:02:10.836Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-09-10T16:02:10.836Z",
+                    "display_at": "2021-09-10T16:02:10.836Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "q6p0bk8qk4l6",
+                    "incident_id": "q576nbf9cdcm",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "5c6cyd1cwnj8",
+                            "name": "v2 RESTful Spaces endpoints",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        }
+                    ]
+                },
+                {
+                    "status": "identified",
+                    "body": "We identified an irregularity that causes a decreased success rate for Spaces lookup endpoint when looking up multiple IDs. Developers making requests to these endpoints may see a decrease in the success rate while the irregularity is ongoing.",
+                    "created_at": "2021-08-30T16:37:10.420Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-08-30T16:37:10.420Z",
+                    "display_at": "2021-08-30T16:37:10.420Z",
+                    "deliver_notifications": false,
+                    "tweet_id": null,
+                    "id": "9knrvwywsncd",
+                    "incident_id": "q576nbf9cdcm",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "5c6cyd1cwnj8",
+                            "name": "v2 RESTful Spaces endpoints",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        }
+                    ]
+                }
+            ],
+            "postmortem_body": null,
+            "postmortem_body_last_updated_at": null,
+            "postmortem_ignored": false,
+            "postmortem_published_at": null,
+            "postmortem_notified_subscribers": false,
+            "postmortem_notified_twitter": false,
+            "components": [
+                {
+                    "status": "operational",
+                    "name": "v2 RESTful Spaces endpoints",
+                    "created_at": "2021-08-30T16:35:06.047Z",
+                    "updated_at": "2021-09-20T20:39:25.298Z",
+                    "position": 17,
+                    "description": null,
+                    "showcase": false,
+                    "start_date": "2021-08-30T00:00:00.000Z",
+                    "id": "5c6cyd1cwnj8",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                }
+            ]
+        },
+        {
+            "name": "Detected increase OAuth and Developer Portal errors",
+            "status": "resolved",
+            "created_at": "2021-08-17T16:55:14.570Z",
+            "updated_at": "2021-08-17T16:55:14.632Z",
+            "monitoring_at": null,
+            "resolved_at": "2021-08-18T05:30:00.000Z",
+            "impact": "none",
+            "shortlink": "https://stspg.io/4sfrmxmtswgk",
+            "scheduled_for": null,
+            "scheduled_until": null,
+            "scheduled_remind_prior": false,
+            "scheduled_reminded_at": null,
+            "impact_override": null,
+            "scheduled_auto_in_progress": false,
+            "scheduled_auto_completed": false,
+            "metadata": {},
+            "started_at": "2021-08-17T16:55:14.566Z",
+            "id": "nfpgsp48qqdx",
+            "page_id": "zjttvm6ql9lp",
+            "incident_updates": [
+                {
+                    "status": "resolved",
+                    "body": "We've experienced an elevated level of errors starting around 05:25 AM UTC. This affected the ability to create, update, and delete apps in the developer portal. Users would have also experienced intermittent OAuth issues. This was resolved at 10:25 AM UTC.",
+                    "created_at": "2021-08-17T16:55:14.623Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-08-17T16:55:14.623Z",
+                    "display_at": "2021-08-18T05:30:00.000Z",
+                    "deliver_notifications": false,
+                    "tweet_id": null,
+                    "id": "n1r7pjs59rbh",
+                    "incident_id": "nfpgsp48qqdx",
+                    "custom_tweet": null,
+                    "affected_components": null
+                }
+            ],
+            "postmortem_body": null,
+            "postmortem_body_last_updated_at": null,
+            "postmortem_ignored": false,
+            "postmortem_published_at": null,
+            "postmortem_notified_subscribers": false,
+            "postmortem_notified_twitter": false,
+            "components": []
+        },
+        {
+            "name": "Data Processing Failures - Ads API Asynchronous Analytics",
+            "status": "resolved",
+            "created_at": "2021-08-03T22:02:36.000Z",
+            "updated_at": "2021-08-05T21:28:25.692Z",
+            "monitoring_at": null,
+            "resolved_at": "2021-08-05T21:28:25.679Z",
+            "impact": "minor",
+            "shortlink": "https://stspg.io/fm83ykcvq8d1",
+            "scheduled_for": null,
+            "scheduled_until": null,
+            "scheduled_remind_prior": false,
+            "scheduled_reminded_at": null,
+            "impact_override": null,
+            "scheduled_auto_in_progress": false,
+            "scheduled_auto_completed": false,
+            "metadata": {},
+            "started_at": "2021-08-03T22:02:36.000Z",
+            "id": "jq6h7vft4xjf",
+            "page_id": "zjttvm6ql9lp",
+            "incident_updates": [
+                {
+                    "status": "resolved",
+                    "body": "Systems have been monitored over the past few days and metrics have stabilized and improved. We will continue to monitor performance to watch for any significant changes.",
+                    "created_at": "2021-08-05T21:28:25.679Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-08-05T21:28:25.679Z",
+                    "display_at": "2021-08-05T21:28:25.679Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "z608fh36rnnf",
+                    "incident_id": "jq6h7vft4xjf",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "jl4kwnm98bjc",
+                            "name": "Ads API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        }
+                    ]
+                },
+                {
+                    "status": "investigating",
+                    "body": "We are aware of service issues related to our asynchronous analytics endpoints. This began late last week and is affecting job processing times and job success rates. With that, you may see an increase in job failures. If you encounter errors, you may retry your failed requests. We will follow up with more updates over the next several days.",
+                    "created_at": "2021-08-03T22:02:36.432Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-08-03T22:07:36.914Z",
+                    "display_at": "2021-08-03T22:02:36.000Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "4hlq5dsrgl52",
+                    "incident_id": "jq6h7vft4xjf",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "jl4kwnm98bjc",
+                            "name": "Ads API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        }
+                    ]
+                }
+            ],
+            "postmortem_body": null,
+            "postmortem_body_last_updated_at": null,
+            "postmortem_ignored": false,
+            "postmortem_published_at": null,
+            "postmortem_notified_subscribers": false,
+            "postmortem_notified_twitter": false,
+            "components": [
+                {
+                    "status": "operational",
+                    "name": "Ads API",
+                    "created_at": "2019-11-07T21:09:34.352Z",
+                    "updated_at": "2021-09-20T20:39:25.128Z",
+                    "position": 6,
+                    "description": "Status of the Ads API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "jl4kwnm98bjc",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                }
+            ]
+        },
+        {
+            "name": "Ads cards created without card_uri parameter",
+            "status": "resolved",
+            "created_at": "2021-05-14T18:00:00.000Z",
+            "updated_at": "2021-05-15T18:09:06.856Z",
+            "monitoring_at": null,
+            "resolved_at": "2021-05-14T18:00:00.000Z",
+            "impact": "none",
+            "shortlink": "https://stspg.io/q0tcq9fzc99j",
+            "scheduled_for": null,
+            "scheduled_until": null,
+            "scheduled_remind_prior": false,
+            "scheduled_reminded_at": null,
+            "impact_override": null,
+            "scheduled_auto_in_progress": false,
+            "scheduled_auto_completed": false,
+            "metadata": {},
+            "started_at": "2021-05-15T18:09:06.810Z",
+            "id": "szxbrdslw410",
+            "page_id": "zjttvm6ql9lp",
+            "incident_updates": [
+                {
+                    "status": "resolved",
+                    "body": "Between 2021-05-14 18:00:0 UTC and 2021-05-15 15:30:00 UTC, the following cards endpoints were incorrectly creating cards where the card_uri would be null. Cards created without the card_uri field cannot be used in Tweets.\n\nPOST accounts/:account_id/cards/website\nPOST accounts/:account_id/cards/video_website\nPOST accounts/:account_id/cards/image_app_download\nPOST accounts/:account_id/cards/video_app_download\nPOST accounts/:account_id/cards/image_conversation\nPOST accounts/:account_id/cards/video_conversation\n\nRecommended Next Steps: We are investigating whether it is possible to recreate the card_uri field data. If this is blocking advertisers, all cards created during this time using the endpoints listed above and missing the card_uri field should be recreated. After being successfully recreated, we recommend deleting the cards.\n\nFurther updates will be available at:\nhttps://twittercommunity.com/t/announcement-cards-created-without-card-uri-parameter-resolved/154175",
+                    "created_at": "2021-05-15T18:09:06.848Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-05-15T18:09:06.848Z",
+                    "display_at": "2021-05-14T18:00:00.000Z",
+                    "deliver_notifications": false,
+                    "tweet_id": null,
+                    "id": "ns0j1ksl31js",
+                    "incident_id": "szxbrdslw410",
+                    "custom_tweet": null,
+                    "affected_components": null
+                }
+            ],
+            "postmortem_body": null,
+            "postmortem_body_last_updated_at": null,
+            "postmortem_ignored": false,
+            "postmortem_published_at": null,
+            "postmortem_notified_subscribers": false,
+            "postmortem_notified_twitter": false,
+            "components": []
+        },
+        {
+            "name": "Investigating Possible Irregularity for Account Activity API and Usage API",
+            "status": "resolved",
+            "created_at": "2021-04-28T19:51:39.075Z",
+            "updated_at": "2021-04-29T16:36:30.269Z",
+            "monitoring_at": null,
+            "resolved_at": "2021-04-29T16:36:30.255Z",
+            "impact": "minor",
+            "shortlink": "https://stspg.io/7mk8g1tzlpjr",
+            "scheduled_for": null,
+            "scheduled_until": null,
+            "scheduled_remind_prior": false,
+            "scheduled_reminded_at": null,
+            "impact_override": null,
+            "scheduled_auto_in_progress": false,
+            "scheduled_auto_completed": false,
+            "metadata": {},
+            "started_at": "2021-04-28T19:51:39.070Z",
+            "id": "4g3bqy5t799m",
+            "page_id": "zjttvm6ql9lp",
+            "incident_updates": [
+                {
+                    "status": "resolved",
+                    "body": "Usage API and Account Activity API are both now operating as expected.\n\nAffected time frame between 04/28/2021 19:25UTC - 04/28/2021 20:00UTC.  \n\nSome Account Activity API events may have been missed/not retried.  These events can be recovered using Account Activity API Replay in combination with timelines endpoints.",
+                    "created_at": "2021-04-29T16:36:30.255Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-04-29T16:36:30.255Z",
+                    "display_at": "2021-04-29T16:36:30.255Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "wltm183d398q",
+                    "incident_id": "4g3bqy5t799m",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "ymnbbmqyj85q",
+                            "name": "Enterprise and Premium Account Activity API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        },
+                        {
+                            "code": "lqfdjsbsdhh4",
+                            "name": "Enterprise Usage API",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        }
+                    ]
+                },
+                {
+                    "status": "identified",
+                    "body": "The Twitter data team is investigating a possible system irregularity currently affecting Account Activity API webhook delivery and causing delayed Usage information.  The presence and scope of any customer impact has not been determined at this time, but we will provide an update as soon as we know more.",
+                    "created_at": "2021-04-28T19:51:39.177Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-04-28T19:51:39.177Z",
+                    "display_at": "2021-04-28T19:51:39.177Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "588xgzny8hyk",
+                    "incident_id": "4g3bqy5t799m",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "ymnbbmqyj85q",
+                            "name": "Enterprise and Premium Account Activity API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        },
+                        {
+                            "code": "lqfdjsbsdhh4",
+                            "name": "Enterprise Usage API",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        }
+                    ]
+                }
+            ],
+            "postmortem_body": null,
+            "postmortem_body_last_updated_at": null,
+            "postmortem_ignored": false,
+            "postmortem_published_at": null,
+            "postmortem_notified_subscribers": false,
+            "postmortem_notified_twitter": false,
+            "components": [
+                {
+                    "status": "operational",
+                    "name": "Enterprise and Premium Account Activity API",
+                    "created_at": "2017-10-19T19:17:06.772Z",
+                    "updated_at": "2021-09-20T20:39:25.077Z",
+                    "position": 3,
+                    "description": "Status of the enterprise and premium Account Activity API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "ymnbbmqyj85q",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                },
+                {
+                    "status": "operational",
+                    "name": "Enterprise Usage API",
+                    "created_at": "2018-09-25T03:35:08.754Z",
+                    "updated_at": "2021-09-20T20:39:25.110Z",
+                    "position": 5,
+                    "description": "Status of the enterprise Usage API.",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "lqfdjsbsdhh4",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                }
+            ]
+        },
+        {
+            "name": "Investigating connection and data volume delivery inconsistency for PowerTrack",
+            "status": "resolved",
+            "created_at": "2021-04-17T19:43:56.606Z",
+            "updated_at": "2021-04-20T23:24:30.079Z",
+            "monitoring_at": "2021-04-17T22:11:40.496Z",
+            "resolved_at": "2021-04-20T23:24:30.064Z",
+            "impact": "minor",
+            "shortlink": "https://stspg.io/9glzt12zg81b",
+            "scheduled_for": null,
+            "scheduled_until": null,
+            "scheduled_remind_prior": false,
+            "scheduled_reminded_at": null,
+            "impact_override": null,
+            "scheduled_auto_in_progress": false,
+            "scheduled_auto_completed": false,
+            "metadata": {},
+            "started_at": "2021-04-17T19:43:56.601Z",
+            "id": "fwjp036br288",
+            "page_id": "zjttvm6ql9lp",
+            "incident_updates": [
+                {
+                    "status": "resolved",
+                    "body": "Replay is now available for recovery of data during the affected time period: 15:15 - 16:38 UTC April 17, 2021",
+                    "created_at": "2021-04-20T23:24:30.064Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-04-20T23:24:30.064Z",
+                    "display_at": "2021-04-20T23:24:30.064Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "t6sldhqh7nwv",
+                    "incident_id": "fwjp036br288",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "d3dy5wnlksk5",
+                            "name": "Enterprise Volume Streams & PowerTrack",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        }
+                    ]
+                },
+                {
+                    "status": "monitoring",
+                    "body": "We will update the status post once we have more information on Replay availability.",
+                    "created_at": "2021-04-19T15:52:58.061Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-04-19T15:52:58.061Z",
+                    "display_at": "2021-04-19T15:52:58.061Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "wrvdplj3dc76",
+                    "incident_id": "fwjp036br288",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "d3dy5wnlksk5",
+                            "name": "Enterprise Volume Streams & PowerTrack",
+                            "old_status": "operational",
+                            "new_status": "operational"
+                        }
+                    ]
+                },
+                {
+                    "status": "monitoring",
+                    "body": "PowerTrack should now be operating as expected, we will continue to monitor.",
+                    "created_at": "2021-04-17T22:11:40.496Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-04-17T22:11:40.496Z",
+                    "display_at": "2021-04-17T22:11:40.496Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "1zf7w17bmg3x",
+                    "incident_id": "fwjp036br288",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "d3dy5wnlksk5",
+                            "name": "Enterprise Volume Streams & PowerTrack",
+                            "old_status": "degraded_performance",
+                            "new_status": "operational"
+                        }
+                    ]
+                },
+                {
+                    "status": "identified",
+                    "body": "We are continuing to test and evaluate.",
+                    "created_at": "2021-04-17T21:21:10.416Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-04-17T21:21:10.416Z",
+                    "display_at": "2021-04-17T21:21:10.416Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "k8sdhtn85vk8",
+                    "incident_id": "fwjp036br288",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "d3dy5wnlksk5",
+                            "name": "Enterprise Volume Streams & PowerTrack",
+                            "old_status": "degraded_performance",
+                            "new_status": "degraded_performance"
+                        }
+                    ]
+                },
+                {
+                    "status": "investigating",
+                    "body": "The Twitter data team is investigating and diagnosing connection issues and data volume inconsistency for PowerTrack.  The presence and scope of any customer impact has not been determined at this time, but we will provide an update as soon as we know more.",
+                    "created_at": "2021-04-17T19:43:56.720Z",
+                    "wants_twitter_update": false,
+                    "twitter_updated_at": null,
+                    "updated_at": "2021-04-17T19:43:56.720Z",
+                    "display_at": "2021-04-17T19:43:56.720Z",
+                    "deliver_notifications": true,
+                    "tweet_id": null,
+                    "id": "l88xmglk7cx8",
+                    "incident_id": "fwjp036br288",
+                    "custom_tweet": null,
+                    "affected_components": [
+                        {
+                            "code": "d3dy5wnlksk5",
+                            "name": "Enterprise Volume Streams & PowerTrack",
+                            "old_status": "operational",
+                            "new_status": "degraded_performance"
+                        }
+                    ]
+                }
+            ],
+            "postmortem_body": null,
+            "postmortem_body_last_updated_at": null,
+            "postmortem_ignored": false,
+            "postmortem_published_at": null,
+            "postmortem_notified_subscribers": false,
+            "postmortem_notified_twitter": false,
+            "components": [
+                {
+                    "status": "operational",
+                    "name": "Enterprise Volume Streams & PowerTrack",
+                    "created_at": "2017-01-24T22:36:30.951Z",
+                    "updated_at": "2021-09-20T20:39:25.048Z",
+                    "position": 1,
+                    "description": "Status of the enterprise Firehose API, language Firehose APIs, Compliance Firehose API, Decahose API, Streaming Likes API, and PowerTrack API",
+                    "showcase": false,
+                    "start_date": null,
+                    "id": "d3dy5wnlksk5",
+                    "page_id": "zjttvm6ql9lp",
+                    "group_id": null
+                }
+            ]
+        }
+    ]
+}

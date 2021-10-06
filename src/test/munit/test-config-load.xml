@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:compression="http://www.mulesoft.org/schema/mule/compression" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:secure-properties="http://www.mulesoft.org/schema/mule/secure-properties"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/schema/mule/secure-properties/current/mule-secure-properties.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/compression http://www.mulesoft.org/schema/mule/compression/current/mule-compression.xsd">
+	<configuration-properties doc:name="Configuration properties" doc:id="31b03470-d2c0-4969-a9fe-bd1669a5c75f" file="config-test.properties" />
+	<secure-properties:config name="Secure_Properties_Config-test" doc:name="Secure Properties Config" doc:id="eaaca92f-9cd5-44ac-8d5f-f8217348ca1f" file="secure-test.properties" key="testkey" >
+		<secure-properties:encrypt algorithm="Blowfish" />
+	</secure-properties:config>
+	<global-property doc:name="Global Property" doc:id="1e586742-b921-41a2-a660-3145a1534191" name="mule.encryptionkey" value="testkey" />
+	<flow name="create-twittersearch-api-mockdata" doc:id="33f54308-6c64-4b00-a79c-3860fb664862" >
+		<choice doc:name="Choice" doc:id="e586b9db-2c92-4981-a623-6f790568eadf" >
+			<when expression="#[vars.searchType == 'TWEETS']">
+				<ee:transform doc:name="Massage Sample Twitter Search Results Data" doc:id="9efdfa1c-4a65-4e81-9c93-b7f8acf9a556" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+import * from dw::util::Values
+output application/json
+var sampleData = readUrl("classpath://sample_data//twitter-search-api-results.json", "application/json")
+var searchMetadata = sampleData."search_metadata"
+var currentTimeFormatted = now() as String {format: "EEE MMM dd HH:mm:ss Z yyyy"}
+
+var updatedstatuses = sampleData.statuses update "created_at" with currentTimeFormatted
+---
+{
+	statuses : updatedstatuses,
+	"search_metadata" : searchMetadata
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<compression:compress doc:name="Compress" doc:id="df9f9964-d5bf-40c7-bbdf-040a66814888" outputMimeType="application/json">
+					<compression:compressor >
+						<compression:gzip-compressor />
+					</compression:compressor>
+				</compression:compress>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="Transform Message" doc:id="0bb056f9-a2c8-4727-917c-dac1600dffbe" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var sampleData = readUrl("classpath://sample_data//twitter-search-api-hashtags-results.json", "application/json")
+---
+sampleData]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<compression:compress doc:name="Compress" doc:id="d62a9437-fe21-489e-8ba1-56fe697378e3" outputMimeType="application/json">
+					<compression:compressor >
+						<compression:gzip-compressor />
+					</compression:compressor>
+				</compression:compress>
+			</otherwise>
+		</choice>
+	</flow>
+	
+	<flow name="create-twittersearch-api-mocknodata" doc:id="6932095b-671a-40e0-af7b-ae9813f73566" >
+		<choice doc:name="Choice" doc:id="26703d60-d793-4bf4-9cb2-12999aed7b0e" >
+			<when expression="#[vars.searchType == 'TWEETS']">
+				<ee:transform doc:name="Massage Sample Twitter Search Results Data" doc:id="5bf6ef26-0a3c-422d-a11e-d10e005df3d2" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+import * from dw::util::Values
+output application/json
+var sampleData = readUrl("classpath://sample_data//twitter-search-api-no-results.json", "application/json")
+
+---
+sampleData]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<compression:compress doc:name="Compress" doc:id="0bdc6b1e-c98c-4bef-a35f-7f3aa75cf731" outputMimeType="application/json">
+					<compression:compressor >
+						<compression:gzip-compressor />
+					</compression:compressor>
+				</compression:compress>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="Transform Message" doc:id="7d98eb74-9419-4f36-8854-666ba1b3c44b" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var sampleData = readUrl("classpath://sample_data//twitter-search-api-hashtags-no-results.json", "application/json")
+---
+sampleData]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+				<compression:compress doc:name="Compress" doc:id="5d8a1b11-0569-468b-9a4f-105251276fb4" outputMimeType="application/json">
+					<compression:compressor >
+						<compression:gzip-compressor />
+					</compression:compressor>
+				</compression:compress>
+			</otherwise>
+		</choice>
+	</flow>
+	
+	<flow name="create-twittersearch-api-mockdata-dynamiccreatedate" doc:id="5866199b-be5a-47f9-9a80-7205ce8d3d8e" >
+		
+			
+				<ee:transform doc:name="Massage Sample Twitter Search Results Data Dynamic Create Date" doc:id="4d1d1910-143b-4d2f-a4be-1487db3e2576" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+import * from dw::util::Values
+output application/json
+var currentTime = now()
+fun updateCreatedDate(hourReduce) =  (currentTime - ("PT$(hourReduce)H")) as String {format: "EEE MMM dd HH:mm:ss Z yyyy"}
+var sampleData = readUrl("classpath://sample_data//twitter-search-api-results.json", "application/json")
+var searchMetadata = sampleData."search_metadata"
+var updatedstatuses = sampleData.statuses map ((item, index) -> item update "created_at" with  updateCreatedDate(index))
+
+---
+{
+	statuses : updatedstatuses,
+	"search_metadata" : searchMetadata
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="870f7096-94a5-4122-8483-20df0551a558" message='#[payload.statuses."created_at"]' category="com.acme.social"/>
+				
+	
+</flow>
+</mule>

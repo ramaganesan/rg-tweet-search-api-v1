@@ -1,0 +1,8 @@
+%dw 2.0
+
+type auto_26c4056a_e17a_40fc_82ee_5ef03726663c_Output_Payload = {|
+  requestId: String, 
+  errorCode: String, 
+  errorMessage: String | Null
+|}
+

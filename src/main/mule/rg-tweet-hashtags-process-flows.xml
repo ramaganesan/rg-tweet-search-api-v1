@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	
+	<sub-flow name="twitter-hasgtags-process-results" doc:id="19ae6b68-c315-40b7-8e5b-5298adec508f" >
+		<choice doc:name="Choice" doc:id="b4943aba-10dd-4046-822c-224881fee31e" >
+			<when expression="#[isEmpty(payload.statuses)]">
+				<ee:transform doc:name="Set Payload as Empty Hashtags" doc:id="0621babe-24b8-4f6e-b3ab-8bbe53a8d32e" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	requestId: correlationId,
+	keyword : vars.keyword,
+	hashtags: []
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</when>
+			<otherwise >
+				<ee:transform doc:name="Set API Response" doc:id="8107c0ba-467d-4dd3-9e80-b8c511acb52f" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+fun processSearchTweets() = payload.statuses reduce ((item, acc = []) -> 
+	if ((sizeOf(acc default[]) < p('twitter.searchapi.defaultapiresult'))
+	)
+   acc + if(isEmpty(item.entities.hashtags)) [] else item.entities.hashtags.text
+else flatten(acc)
+)
+---
+{
+	requestId : correlationId,
+	keyword : vars.keyword,
+	hashtags : processSearchTweets() distinctBy $
+}]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</otherwise>
+		</choice>
+	</sub-flow>
+	<sub-flow name="twitter-hashtags-api-process-request" doc:id="7415a11b-c070-4d18-a2d1-aeea741ddf6d" >
+		<try doc:name="Try" doc:id="a16c96b7-1297-476a-9ef3-287922fc2775" >
+			<set-variable value="#['popular']" doc:name="Set Variable-resultType" doc:id="e7ea0fee-543f-47b5-ab43-9746132717b7" variableName="resultType"/>
+			<flow-ref doc:name="twitter-search-api-httprequest" doc:id="a17b95b1-d4ca-4270-b80a-6446d75b8dbf" name="twitter-search-api-httprequest"/>
+			<flow-ref doc:name="twitter-hasgtags-process-results" doc:id="b0eccc9c-d839-4997-9f9e-e50df52af837" name="twitter-hasgtags-process-results"/>
+			<error-handler ref="twitter-api-request-Error_Handler"/>
+		</try>
+	</sub-flow>
+	
+	</mule>

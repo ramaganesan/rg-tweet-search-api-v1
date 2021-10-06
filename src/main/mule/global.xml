@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:oauth="http://www.mulesoft.org/schema/mule/oauth"
+	xmlns:secure-properties="http://www.mulesoft.org/schema/mule/secure-properties"
+	xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd 
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/schema/mule/secure-properties/current/mule-secure-properties.xsd
+http://www.mulesoft.org/schema/mule/oauth http://www.mulesoft.org/schema/mule/oauth/current/mule-oauth.xsd">
+	<configuration-properties doc:name="Configuration properties" doc:id="3da40f20-9e9a-4a54-b7d1-e59e31ca5cbf" file="config-${mule.env}.properties" />
+	<global-property doc:name="Global Property" doc:id="4d79304c-dbb1-4375-be95-e675b7735088" name="mule.env" value="local" />
+	<http:listener-config name="rg-tweet-search-api-v1-httpListenerConfig" basePath="${http.basepath}">
+        <http:listener-connection host="${http.host}" port="${http.port}" connectionIdleTimeout="${http.connectionIdleTimeout-msec}"/>
+    </http:listener-config>
+    <apikit:config name="rg-tweet-search-api-v1-config" api="resource::0083d055-9230-4420-9463-cb57e41e2fb4:rg-tweet-search-api-v1:1.0.2:raml:zip:rg-tweet-search-api-v1.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="d23bd55d-b002-4b3e-a52b-e12f6253fda2" file="secure-${mule.env}.properties" key="${mule.encryptionkey}">
+		<secure-properties:encrypt algorithm="Blowfish" />
+	</secure-properties:config>
+	<http:request-config name="Twitter-Status-EndPoint-Request-Config" doc:name="HTTP Request configuration" doc:id="1d9058e3-3b5e-4842-9b9b-8e184d05eef1" responseTimeout="${twitter.statusendpoint.responseTimeout-inmsec}" >
+		<http:request-connection host="${twitter.statusendpoint.host}" protocol="HTTPS" port="${twitter.statusendpoint.port}"/>
+	</http:request-config>
+	<http:request-config name="Twitter-SearchAPI-Http-Request-Config" doc:name="HTTP Request configuration" doc:id="248038d8-d898-4d37-b879-f02c09d11a65" basePath="${twitter.searchapi.basepath}">
+		<http:request-connection protocol="HTTPS" host="${twitter.searchapi.host}" port="${twitter.searchapi.port}" connectionIdleTimeout="${twitter.searchapi.connectionIdleTimeout-msec}">
+			<http:authentication >
+				<oauth:client-credentials-grant-type clientId="${secure::twitter-api-key}" clientSecret="${secure::twitter-api-secret}" tokenUrl="${twitter.api.oauthtokenendpoint}" refreshTokenWhen="#[(attributes.statusCode == 403) or (attributes.statusCode == 401)]" />
+			</http:authentication>
+		</http:request-connection>
+	</http:request-config>
+	<sub-flow name="apikit-400-error-subflow" doc:id="26c4056a-e17a-40fc-82ee-5ef03726663c" >
+		<ee:transform doc:name="Transform Message" doc:id="136bea77-a479-43e8-b1f6-d0e3cf3f8d8a" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  "requestId" : correlationId,
+   "errorCode" : "DE_API_KIT",
+   "errorMessage" : error.detailedDescription
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</sub-flow>
+	
+	<sub-flow name="process-error" doc:id="39afcb84-f34f-4d67-a223-0952fbc0da1d" >
+		<ee:transform doc:name="Set Error Object" doc:id="18b45fba-4106-4bf5-8a69-8fa0e5ec7199" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	errorType : error.errorType,
+	description : error.description,
+	detailedDescription : error.detailedDescription,
+	errorMessage : error.errorMessage default ""
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="ERROR" doc:name="Logger-Error" doc:id="f3da58e6-9996-4032-afcc-8766bddb99e5" message="#[payload]" category="com.acme.social"/>
+	</sub-flow>
+	<error-handler name="twitter-api-request-Error_Handler" doc:id="f4ef7176-1a75-49f1-a05c-5f9d54c9ee24">
+	    <on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="44f97b8a-4036-45ea-b5a3-ecc100ddd853" type="HTTP:BAD_GATEWAY, HTTP:BAD_REQUEST, HTTP:CLIENT_SECURITY, HTTP:CONNECTIVITY, HTTP:FORBIDDEN, HTTP:INTERNAL_SERVER_ERROR, HTTP:METHOD_NOT_ALLOWED, HTTP:NOT_ACCEPTABLE, HTTP:NOT_FOUND, HTTP:PARSING, HTTP:RETRY_EXHAUSTED, HTTP:SECURITY, HTTP:SERVICE_UNAVAILABLE, HTTP:TIMEOUT, HTTP:TOO_MANY_REQUESTS, HTTP:UNAUTHORIZED, HTTP:UNSUPPORTED_MEDIA_TYPE">
+					<flow-ref doc:name="process-error" doc:id="7fba8863-aa65-4b32-9dbf-431055c0df0a" name="process-error"/>
+					<ee:transform doc:name="Set Error Payload" doc:id="acde3fb7-2806-4039-8f3b-d69fdcd95ffe" >
+						<ee:message >
+							<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+  "requestId" : correlationId,
+  "error": {
+    "errorCode" : "TWITTER_HTTP_ERROR",
+    "errorMessage" : "Error using Twitter Search API endpoint"
+  }
+}]]></ee:set-payload>
+						</ee:message>
+						<ee:variables >
+							<ee:set-variable variableName="httpStatus" ><![CDATA[%dw 2.0
+output application/java
+---
+500]]></ee:set-variable>
+						</ee:variables>
+					</ee:transform>
+				</on-error-propagate>
+				<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="6d92b0b0-3c9f-42eb-8396-c4b126480082" type="COMPRESSION:COULD_NOT_DECOMPRESS, COMPRESSION:INVALID_ARCHIVE, COMPRESSION:TOO_MANY_ENTRIES">
+					<flow-ref doc:name="process-error" doc:id="56852b9f-8d6d-407b-86ee-2097c899dcec" name="process-error"/>
+					<ee:transform doc:name="Set Error Payload" doc:id="567ee153-3c28-47ca-9ff8-d89f6b3ba016">
+						<ee:message>
+							<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+  "requestId" : correlationId,
+  "error": {
+    "errorCode" : "TWITTER_API_RESPONSE_ERROR",
+    "errorMessage" : "Error while de-compressing API Response"
+  }
+}]]></ee:set-payload>
+						</ee:message>
+						<ee:variables >
+							<ee:set-variable variableName="httpStatus" ><![CDATA[%dw 2.0
+output application/java
+---
+500]]></ee:set-variable>
+						</ee:variables>
+					</ee:transform>
+				</on-error-propagate>
+				<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate" doc:id="5f5f753b-d3eb-49f7-ae3c-afe65c09b35c" type="EXPRESSION, STREAM_MAXIMUM_SIZE_EXCEEDED">
+					<flow-ref doc:name="process-error" doc:id="8a85a724-dc26-4fa4-b4bd-bfb6ec7273c6" name="process-error"/>
+					<ee:transform doc:name="Set Error Payload" doc:id="f8a49f53-f876-4931-ad03-eb06a4150883">
+						<ee:message>
+							<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+  "requestId" : correlationId,
+  "error": {
+    "errorCode" : "PROCESS_RESULT_ERROR",
+    "errorMessage" : "Error while processing API search response"
+  }
+}]]></ee:set-payload>
+						</ee:message>
+						<ee:variables>
+							<ee:set-variable variableName="httpStatus"><![CDATA[%dw 2.0
+output application/java
+---
+500]]></ee:set-variable>
+						</ee:variables>
+					</ee:transform>
+				</on-error-propagate>
+	</error-handler>
+</mule>

@@ -1,0 +1,2314 @@
+{
+    "statuses": [
+        {
+            "created_at": "Tue Oct 05 02:35:06 +0000 2021",
+            "id": 1445215944201146368,
+            "id_str": "1445215944201146368",
+            "text": "Dear #MAGA. Are you paying attention to this?\n\nUnder Trump, over $8 trillion was added to #USACreditCard. \n\nTo Team… https://t.co/eoM5404XUN",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "MAGA",
+                        "indices": [
+                            5,
+                            10
+                        ]
+                    },
+                    {
+                        "text": "USACreditCard",
+                        "indices": [
+                            90,
+                            104
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/eoM5404XUN",
+                        "expanded_url": "https://twitter.com/i/web/status/1445215944201146368",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 60919240,
+                "id_str": "60919240",
+                "name": "Donna Brazile",
+                "screen_name": "donnabrazile",
+                "location": "USA",
+                "description": "Former interim Chair Democratic National Committee (DNC) in 2012 and 2016-2017. Adjunct Lecturer Georgetown. King Lecture Chair at Howard University.",
+                "url": "https://t.co/dlPG0YcxKo",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/dlPG0YcxKo",
+                                "expanded_url": "http://donnabrazile.com",
+                                "display_url": "donnabrazile.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 660007,
+                "friends_count": 6349,
+                "listed_count": 8335,
+                "created_at": "Tue Jul 28 14:36:39 +0000 2009",
+                "favourites_count": 24767,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 66820,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/839786974617694208/HV-rCq8I_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/839786974617694208/HV-rCq8I_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/60919240/1629638309",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 79,
+            "favorite_count": 165,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Mon Oct 04 21:31:48 +0000 2021",
+            "id": 1445139615241936900,
+            "id_str": "1445139615241936900",
+            "text": "When George W Bush was president, #NancyPelosi voted not once, not twice, but three times against raising the… https://t.co/pnn9uPunvs",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "NancyPelosi",
+                        "indices": [
+                            34,
+                            46
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/pnn9uPunvs",
+                        "expanded_url": "https://twitter.com/i/web/status/1445139615241936900",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            111,
+                            134
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 51913011,
+                "id_str": "51913011",
+                "name": "Jeff Jacoby",
+                "screen_name": "Jeff_Jacoby",
+                "location": "Boston, Massachusetts",
+                "description": "I'm an op-ed columnist at the Boston Globe, a purveyor of refreshing conservative cheer in the midst of a dusty liberal wilderness.",
+                "url": "http://t.co/Cvcu6oPj4f",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/Cvcu6oPj4f",
+                                "expanded_url": "http://www.jeffjacoby.com/",
+                                "display_url": "jeffjacoby.com",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 20746,
+                "friends_count": 1069,
+                "listed_count": 646,
+                "created_at": "Mon Jun 29 01:38:50 +0000 2009",
+                "favourites_count": 829,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 22013,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme7/bg.gif",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme7/bg.gif",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1325434908840484864/ywKrWu0S_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1325434908840484864/ywKrWu0S_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/51913011/1604414216",
+                "profile_link_color": "006400",
+                "profile_sidebar_border_color": "AE2424",
+                "profile_sidebar_fill_color": "F0E5C1",
+                "profile_text_color": "000000",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": true,
+            "quoted_status_id": 1445043758102454286,
+            "quoted_status_id_str": "1445043758102454286",
+            "quoted_status": {
+                "created_at": "Mon Oct 04 15:10:54 +0000 2021",
+                "id": 1445043758102454286,
+                "id_str": "1445043758102454286",
+                "text": "Reckless and irresponsible. https://t.co/YRvHCfQJGf",
+                "truncated": false,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [],
+                    "media": [
+                        {
+                            "id": 1440663928405594126,
+                            "id_str": "1440663928405594126",
+                            "indices": [
+                                28,
+                                51
+                            ],
+                            "media_url": "http://pbs.twimg.com/media/E_5EUaoVUBIp3mw.jpg",
+                            "media_url_https": "https://pbs.twimg.com/media/E_5EUaoVUBIp3mw.jpg",
+                            "url": "https://t.co/YRvHCfQJGf",
+                            "display_url": "pic.twitter.com/YRvHCfQJGf",
+                            "expanded_url": "https://twitter.com/TheDemocrats/status/1440664054964449292/video/1",
+                            "type": "photo",
+                            "sizes": {
+                                "thumb": {
+                                    "w": 150,
+                                    "h": 150,
+                                    "resize": "crop"
+                                },
+                                "small": {
+                                    "w": 680,
+                                    "h": 680,
+                                    "resize": "fit"
+                                },
+                                "large": {
+                                    "w": 1080,
+                                    "h": 1080,
+                                    "resize": "fit"
+                                },
+                                "medium": {
+                                    "w": 1080,
+                                    "h": 1080,
+                                    "resize": "fit"
+                                }
+                            },
+                            "source_status_id": 1440664054964449292,
+                            "source_status_id_str": "1440664054964449292",
+                            "source_user_id": 14377605,
+                            "source_user_id_str": "14377605"
+                        }
+                    ]
+                },
+                "extended_entities": {
+                    "media": [
+                        {
+                            "id": 1440663928405594126,
+                            "id_str": "1440663928405594126",
+                            "indices": [
+                                28,
+                                51
+                            ],
+                            "media_url": "http://pbs.twimg.com/media/E_5EUaoVUBIp3mw.jpg",
+                            "media_url_https": "https://pbs.twimg.com/media/E_5EUaoVUBIp3mw.jpg",
+                            "url": "https://t.co/YRvHCfQJGf",
+                            "display_url": "pic.twitter.com/YRvHCfQJGf",
+                            "expanded_url": "https://twitter.com/TheDemocrats/status/1440664054964449292/video/1",
+                            "type": "video",
+                            "sizes": {
+                                "thumb": {
+                                    "w": 150,
+                                    "h": 150,
+                                    "resize": "crop"
+                                },
+                                "small": {
+                                    "w": 680,
+                                    "h": 680,
+                                    "resize": "fit"
+                                },
+                                "large": {
+                                    "w": 1080,
+                                    "h": 1080,
+                                    "resize": "fit"
+                                },
+                                "medium": {
+                                    "w": 1080,
+                                    "h": 1080,
+                                    "resize": "fit"
+                                }
+                            },
+                            "source_status_id": 1440664054964449292,
+                            "source_status_id_str": "1440664054964449292",
+                            "source_user_id": 14377605,
+                            "source_user_id_str": "14377605",
+                            "video_info": {
+                                "aspect_ratio": [
+                                    1,
+                                    1
+                                ],
+                                "duration_millis": 17392,
+                                "variants": [
+                                    {
+                                        "content_type": "application/x-mpegURL",
+                                        "url": "https://video.twimg.com/amplify_video/1440663928405594126/pl/nAq_-jdyhrm4hmmF.m3u8?tag=14"
+                                    },
+                                    {
+                                        "bitrate": 432000,
+                                        "content_type": "video/mp4",
+                                        "url": "https://video.twimg.com/amplify_video/1440663928405594126/vid/320x320/f44mkA7zvBhzWPMu.mp4?tag=14"
+                                    },
+                                    {
+                                        "bitrate": 1280000,
+                                        "content_type": "video/mp4",
+                                        "url": "https://video.twimg.com/amplify_video/1440663928405594126/vid/720x720/oOznW2oeiH-4aTS3.mp4?tag=14"
+                                    },
+                                    {
+                                        "bitrate": 832000,
+                                        "content_type": "video/mp4",
+                                        "url": "https://video.twimg.com/amplify_video/1440663928405594126/vid/540x540/X4_gBxtqLSDjRxK8.mp4?tag=14"
+                                    }
+                                ]
+                            },
+                            "additional_media_info": {
+                                "monetizable": false
+                            }
+                        }
+                    ]
+                },
+                "metadata": {
+                    "result_type": "popular",
+                    "iso_language_code": "en"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 2461810448,
+                    "id_str": "2461810448",
+                    "name": "Nancy Pelosi",
+                    "screen_name": "TeamPelosi",
+                    "location": "San Francisco",
+                    "description": "Organize, mobilize and fight #ForThePeople. This is Nancy's political account. Tweets from her are signed -NP.",
+                    "url": "https://t.co/LPBbU8JdmX",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/LPBbU8JdmX",
+                                    "expanded_url": "https://store.pelosiforcongress.org/",
+                                    "display_url": "store.pelosiforcongress.org",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 820155,
+                    "friends_count": 8234,
+                    "listed_count": 2403,
+                    "created_at": "Thu Apr 24 15:17:41 +0000 2014",
+                    "favourites_count": 1617,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": true,
+                    "statuses_count": 9827,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "C0DEED",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1317234655385559040/aVYPkmm-_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1317234655385559040/aVYPkmm-_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/2461810448/1571268285",
+                    "profile_link_color": "1DA1F2",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": false,
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 6876,
+                "favorite_count": 16845,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "en"
+            },
+            "retweet_count": 80,
+            "favorite_count": 315,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Mon Oct 04 16:27:45 +0000 2021",
+            "id": 1445063097765580800,
+            "id_str": "1445063097765580800",
+            "text": ".@HouseGOP @SenateGOP rightly refuse to support suspending the #DebtCeiling and handing Democrats a blank check to… https://t.co/BZgXof72Ru",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "DebtCeiling",
+                        "indices": [
+                            63,
+                            75
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "HouseGOP",
+                        "name": "House Republicans",
+                        "id": 15207668,
+                        "id_str": "15207668",
+                        "indices": [
+                            1,
+                            10
+                        ]
+                    },
+                    {
+                        "screen_name": "SenateGOP",
+                        "name": "Senate Republicans",
+                        "id": 14344823,
+                        "id_str": "14344823",
+                        "indices": [
+                            11,
+                            21
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/BZgXof72Ru",
+                        "expanded_url": "https://twitter.com/i/web/status/1445063097765580800",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            116,
+                            139
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 2975091705,
+                "id_str": "2975091705",
+                "name": "Rep. Jody Hice",
+                "screen_name": "CongressmanHice",
+                "location": "Greensboro, GA; Washington, DC",
+                "description": "Proudly serving Georgia's 10th District. @FreedomCaucus Communications Chair. @GOPOversight Government Operations Subcommittee Ranking Member.",
+                "url": "https://t.co/apR1dqYCIk",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/apR1dqYCIk",
+                                "expanded_url": "http://hice.house.gov",
+                                "display_url": "hice.house.gov",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 88141,
+                "friends_count": 4236,
+                "listed_count": 1015,
+                "created_at": "Mon Jan 12 18:48:35 +0000 2015",
+                "favourites_count": 8848,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 5903,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1415040982123417603/D3MrZqgZ_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1415040982123417603/D3MrZqgZ_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2975091705/1576863340",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 49,
+            "favorite_count": 116,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Tue Oct 05 09:35:28 +0000 2021",
+            "id": 1445321732055715846,
+            "id_str": "1445321732055715846",
+            "text": "\"What we're getting out of Joe Biden is the Bernie Sanders agenda,\" Stephen Moore tells Newsmax. \"Nobody signed up… https://t.co/jH21WJdcr1",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/jH21WJdcr1",
+                        "expanded_url": "https://twitter.com/i/web/status/1445321732055715846",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            116,
+                            139
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"http://www.socialbakers.com/\" rel=\"nofollow\">Emplifi</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 20545835,
+                "id_str": "20545835",
+                "name": "Newsmax",
+                "screen_name": "newsmax",
+                "location": "United States",
+                "description": "Watch Newsmax now on DirecTV 349, Xfinity 1115, Dish 216, Spectrum, Optimum 102, Cox, Fios 615, Uverse 1220, Suddenlink 102, YouTube and more here: https://t.co/rs8XZDalW3",
+                "url": "http://t.co/x0Mdx0P2eO",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/x0Mdx0P2eO",
+                                "expanded_url": "http://www.newsmax.com",
+                                "display_url": "newsmax.com",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/rs8XZDalW3",
+                                "expanded_url": "http://nws.mx/tv",
+                                "display_url": "nws.mx/tv",
+                                "indices": [
+                                    148,
+                                    171
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 982697,
+                "friends_count": 596,
+                "listed_count": 4528,
+                "created_at": "Tue Feb 10 21:04:49 +0000 2009",
+                "favourites_count": 1090,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 124335,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F4F7FB",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme2/bg.gif",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme2/bg.gif",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1394735604269817857/AXKKo6XT_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1394735604269817857/AXKKo6XT_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/20545835/1621263045",
+                "profile_link_color": "295AAB",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "DAECF4",
+                "profile_text_color": "663B12",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 80,
+            "favorite_count": 297,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Mon Oct 04 19:56:55 +0000 2021",
+            "id": 1445115735882313754,
+            "id_str": "1445115735882313754",
+            "text": "Republicans racked up trillions in debt by cutting taxes to corporations and the top 1%. \n\nNow, they’re refusing to… https://t.co/e3s9seMkKt",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/e3s9seMkKt",
+                        "expanded_url": "https://twitter.com/i/web/status/1445115735882313754",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 2371339658,
+                "id_str": "2371339658",
+                "name": "Rep. Jimmy Gomez",
+                "screen_name": "RepJimmyGomez",
+                "location": "Los Angeles, CA",
+                "description": "Official account for U.S. Congressman Jimmy Gomez (CA-34, Los Angeles). Committees: @WaysMeansCmte and @OversightDems",
+                "url": "https://t.co/0MG23MMtKR",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/0MG23MMtKR",
+                                "expanded_url": "https://linktr.ee/repjimmygomez",
+                                "display_url": "linktr.ee/repjimmygomez",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 37908,
+                "friends_count": 3772,
+                "listed_count": 681,
+                "created_at": "Tue Mar 04 03:56:14 +0000 2014",
+                "favourites_count": 1575,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 6869,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/978147788667027456/Sshj14W0_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/978147788667027456/Sshj14W0_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2371339658/1522043572",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": true,
+            "quoted_status_id": 1445054453430767619,
+            "quoted_status_id_str": "1445054453430767619",
+            "quoted_status": {
+                "created_at": "Mon Oct 04 15:53:24 +0000 2021",
+                "id": 1445054453430767619,
+                "id_str": "1445054453430767619",
+                "text": "“Just get out of the way,” Biden says to Republicans on raising the national debt limit. He’s referring to efforts… https://t.co/5rCyTymkie",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [
+                        {
+                            "url": "https://t.co/5rCyTymkie",
+                            "expanded_url": "https://twitter.com/i/web/status/1445054453430767619",
+                            "display_url": "twitter.com/i/web/status/1…",
+                            "indices": [
+                                116,
+                                139
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "result_type": "popular",
+                    "iso_language_code": "en"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 39155029,
+                    "id_str": "39155029",
+                    "name": "Manu Raju",
+                    "screen_name": "mkraju",
+                    "location": "The Capitol",
+                    "description": "Chief Congressional Correspondent, @CNN. Roaming the Capitol halls, covering the Hill and politics. Die-hard Chicago sports fan. Wisconsin Badger for life.",
+                    "url": "https://t.co/vtt0v8C3y8",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/vtt0v8C3y8",
+                                    "expanded_url": "http://www.facebook.com/mkraju00",
+                                    "display_url": "facebook.com/mkraju00",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 603341,
+                    "friends_count": 5646,
+                    "listed_count": 6457,
+                    "created_at": "Mon May 11 01:13:00 +0000 2009",
+                    "favourites_count": 5554,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": true,
+                    "verified": true,
+                    "statuses_count": 53830,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "022330",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme6/bg.gif",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme6/bg.gif",
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1036076785312718849/DqKNeMaJ_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1036076785312718849/DqKNeMaJ_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/39155029/1597612345",
+                    "profile_link_color": "0084B4",
+                    "profile_sidebar_border_color": "A8C7F7",
+                    "profile_sidebar_fill_color": "C0DFEC",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": false,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 90,
+                "favorite_count": 439,
+                "favorited": false,
+                "retweeted": false,
+                "lang": "en"
+            },
+            "retweet_count": 56,
+            "favorite_count": 146,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Tue Oct 05 15:02:39 +0000 2021",
+            "id": 1445404070399860743,
+            "id_str": "1445404070399860743",
+            "text": "#Democrats claim it's vital that the #DebtCeiling be raised and economic armageddon will ensue if it's not. But whi… https://t.co/Z0BRsvEOFU",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "Democrats",
+                        "indices": [
+                            0,
+                            10
+                        ]
+                    },
+                    {
+                        "text": "DebtCeiling",
+                        "indices": [
+                            37,
+                            49
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/Z0BRsvEOFU",
+                        "expanded_url": "https://twitter.com/i/web/status/1445404070399860743",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 56562803,
+                "id_str": "56562803",
+                "name": "Peter Schiff",
+                "screen_name": "PeterSchiff",
+                "location": "Puerto Rico",
+                "description": "Chief Economist & Global Strategist: https://t.co/OMmqdEJS2O  | \nChairman: https://t.co/Ib5G6n78js  |  Founder: https://t.co/rtQQUAUL5U , https://t.co/Y3k2NTM8Jo  |  Host: https://t.co/YAV1Kdqb51",
+                "url": "https://t.co/QaPiD7gJO4",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/QaPiD7gJO4",
+                                "expanded_url": "http://amzn.to/1nDylDr",
+                                "display_url": "amzn.to/1nDylDr",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/OMmqdEJS2O",
+                                "expanded_url": "http://Europac.com",
+                                "display_url": "Europac.com",
+                                "indices": [
+                                    37,
+                                    60
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/Ib5G6n78js",
+                                "expanded_url": "http://SchiffGold.com",
+                                "display_url": "SchiffGold.com",
+                                "indices": [
+                                    75,
+                                    98
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/rtQQUAUL5U",
+                                "expanded_url": "http://EpacFunds.com",
+                                "display_url": "EpacFunds.com",
+                                "indices": [
+                                    112,
+                                    135
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/Y3k2NTM8Jo",
+                                "expanded_url": "http://EuroPacBank.com",
+                                "display_url": "EuroPacBank.com",
+                                "indices": [
+                                    138,
+                                    161
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/YAV1Kdqb51",
+                                "expanded_url": "http://SchiffRadio.com",
+                                "display_url": "SchiffRadio.com",
+                                "indices": [
+                                    172,
+                                    195
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 565603,
+                "friends_count": 269,
+                "listed_count": 5183,
+                "created_at": "Tue Jul 14 01:28:42 +0000 2009",
+                "favourites_count": 180,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 19753,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FFFFFF",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1265705916298641408/qK7MHnk9_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1265705916298641408/qK7MHnk9_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/56562803/1600369965",
+                "profile_link_color": "003CA3",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "81ADE3",
+                "profile_text_color": "4977C7",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 50,
+            "favorite_count": 323,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Mon Oct 04 17:10:29 +0000 2021",
+            "id": 1445073851709263872,
+            "id_str": "1445073851709263872",
+            "text": "The #DebtCeiling isn’t about limiting spending — it’s about paying our bills. This reckless, politically-motivated… https://t.co/oG1EcJeXFk",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "DebtCeiling",
+                        "indices": [
+                            4,
+                            16
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/oG1EcJeXFk",
+                        "expanded_url": "https://twitter.com/i/web/status/1445073851709263872",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            116,
+                            139
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 874458628119461890,
+                "id_str": "874458628119461890",
+                "name": "Sarah Riggs Amico",
+                "screen_name": "SarahRiggsAmico",
+                "location": "",
+                "description": "Mom, Entrepreneur, Exec Chair @drivejackcooper; Tea drinker, policy nerd, film geek, perpetual yoga novice; 2018 @GeorgiaDemocrat nominee for Lt Gov; ✝️ She/her",
+                "url": "https://t.co/bNpsOni0tD",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/bNpsOni0tD",
+                                "expanded_url": "http://www.OurAmericanDreams.org",
+                                "display_url": "OurAmericanDreams.org",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 14412,
+                "friends_count": 4526,
+                "listed_count": 120,
+                "created_at": "Tue Jun 13 02:49:18 +0000 2017",
+                "favourites_count": 17260,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 7637,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/999839426351022082/JsSrqTkF_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/999839426351022082/JsSrqTkF_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/874458628119461890/1617214055",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 35,
+            "favorite_count": 139,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Tue Oct 05 02:25:01 +0000 2021",
+            "id": 1445213405535739910,
+            "id_str": "1445213405535739910",
+            "text": "Sen. @JoeManchinWV went against party leadership and suggested that Democrats should use the #Reconciliation proces… https://t.co/rBe99ozZ7J",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "Reconciliation",
+                        "indices": [
+                            93,
+                            108
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "JoeManchinWV",
+                        "name": "Joe Manchin",
+                        "id": 113355380,
+                        "id_str": "113355380",
+                        "indices": [
+                            5,
+                            18
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/rBe99ozZ7J",
+                        "expanded_url": "https://twitter.com/i/web/status/1445213405535739910",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"https://buffer.com\" rel=\"nofollow\">Buffer</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 29097819,
+                "id_str": "29097819",
+                "name": "The Epoch Times",
+                "screen_name": "EpochTimes",
+                "location": "New York, USA",
+                "description": "Independent, award-winning reporting based on Truth and Tradition. Free newsletter: https://t.co/0F3JANwb8P | Telegram: https://t.co/Hmk1epY4Kv | Watch: https://t.co/M1G2gEVJmq",
+                "url": "https://t.co/udZgeB9zvZ",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/udZgeB9zvZ",
+                                "expanded_url": "https://subscribe.epochtimes.com/",
+                                "display_url": "subscribe.epochtimes.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/0F3JANwb8P",
+                                "expanded_url": "http://ept.ms/–Newsletters",
+                                "display_url": "ept.ms/–Newsletters",
+                                "indices": [
+                                    84,
+                                    107
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/Hmk1epY4Kv",
+                                "expanded_url": "http://t.me/epochtimes",
+                                "display_url": "t.me/epochtimes",
+                                "indices": [
+                                    120,
+                                    143
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/M1G2gEVJmq",
+                                "expanded_url": "http://epochtv.com",
+                                "display_url": "epochtv.com",
+                                "indices": [
+                                    153,
+                                    176
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 428247,
+                "friends_count": 80,
+                "listed_count": 2746,
+                "created_at": "Sun Apr 05 23:54:55 +0000 2009",
+                "favourites_count": 35989,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 206013,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FFFFFF",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme4/bg.gif",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme4/bg.gif",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/954141295093698560/9x68uifu_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/954141295093698560/9x68uifu_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/29097819/1516660974",
+                "profile_link_color": "00218F",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "3C3940",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 24,
+            "favorite_count": 68,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Tue Oct 05 02:57:04 +0000 2021",
+            "id": 1445221473598193670,
+            "id_str": "1445221473598193670",
+            "text": "Pres #Biden blaming GOP for #DebtCeiling. \n\nDemocrats knew this day coming for 2 yrs.\nNever passed budget.\nNever en… https://t.co/MZs6NyWfua",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "Biden",
+                        "indices": [
+                            5,
+                            11
+                        ]
+                    },
+                    {
+                        "text": "DebtCeiling",
+                        "indices": [
+                            28,
+                            40
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/MZs6NyWfua",
+                        "expanded_url": "https://twitter.com/i/web/status/1445221473598193670",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 19926675,
+                "id_str": "19926675",
+                "name": "Rep. Kevin Brady",
+                "screen_name": "RepKevinBrady",
+                "location": "The Woodlands, Texas",
+                "description": "Dad. Husband. Top Republican @WaysandMeansGOP. Loves: Baseball, Texas, and Tax Reform.",
+                "url": "https://t.co/Xdetq52FGL",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/Xdetq52FGL",
+                                "expanded_url": "http://kevinbrady.house.gov",
+                                "display_url": "kevinbrady.house.gov",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 57005,
+                "friends_count": 851,
+                "listed_count": 1667,
+                "created_at": "Mon Feb 02 19:57:06 +0000 2009",
+                "favourites_count": 3527,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 15510,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "143058",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1430731917901635584/hr3agfSo_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1430731917901635584/hr3agfSo_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/19926675/1547220828",
+                "profile_link_color": "008FB3",
+                "profile_sidebar_border_color": "0A090A",
+                "profile_sidebar_fill_color": "912626",
+                "profile_text_color": "000000",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 20,
+            "favorite_count": 35,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Mon Oct 04 22:40:01 +0000 2021",
+            "id": 1445156781517332481,
+            "id_str": "1445156781517332481",
+            "text": "“Defaulting on the debt would lead to a self-inflicted wound that takes our economy over a cliff,” Biden said.\n\nPre… https://t.co/W1rlX94s88",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/W1rlX94s88",
+                        "expanded_url": "https://twitter.com/i/web/status/1445156781517332481",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"https://buffer.com\" rel=\"nofollow\">Buffer</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 29097819,
+                "id_str": "29097819",
+                "name": "The Epoch Times",
+                "screen_name": "EpochTimes",
+                "location": "New York, USA",
+                "description": "Independent, award-winning reporting based on Truth and Tradition. Free newsletter: https://t.co/0F3JANwb8P | Telegram: https://t.co/Hmk1epY4Kv | Watch: https://t.co/M1G2gEVJmq",
+                "url": "https://t.co/udZgeB9zvZ",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/udZgeB9zvZ",
+                                "expanded_url": "https://subscribe.epochtimes.com/",
+                                "display_url": "subscribe.epochtimes.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/0F3JANwb8P",
+                                "expanded_url": "http://ept.ms/–Newsletters",
+                                "display_url": "ept.ms/–Newsletters",
+                                "indices": [
+                                    84,
+                                    107
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/Hmk1epY4Kv",
+                                "expanded_url": "http://t.me/epochtimes",
+                                "display_url": "t.me/epochtimes",
+                                "indices": [
+                                    120,
+                                    143
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/M1G2gEVJmq",
+                                "expanded_url": "http://epochtv.com",
+                                "display_url": "epochtv.com",
+                                "indices": [
+                                    153,
+                                    176
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 428247,
+                "friends_count": 80,
+                "listed_count": 2746,
+                "created_at": "Sun Apr 05 23:54:55 +0000 2009",
+                "favourites_count": 35989,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 206013,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FFFFFF",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme4/bg.gif",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme4/bg.gif",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/954141295093698560/9x68uifu_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/954141295093698560/9x68uifu_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/29097819/1516660974",
+                "profile_link_color": "00218F",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "3C3940",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 22,
+            "favorite_count": 55,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Tue Oct 05 17:40:43 +0000 2021",
+            "id": 1445443850718248960,
+            "id_str": "1445443850718248960",
+            "text": "They spent the money, but now they don’t want to pay for it. 🤦🏽‍♂️ 🤦‍♀️  And it’s already damaging the US economy.… https://t.co/ePW4uM06ZC",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/ePW4uM06ZC",
+                        "expanded_url": "https://twitter.com/i/web/status/1445443850718248960",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            116,
+                            139
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 26775504,
+                "id_str": "26775504",
+                "name": "Democrats Abroad",
+                "screen_name": "DemsAbroad",
+                "location": "Worldwide! 🇺🇸🌍",
+                "description": "The official Twitter for the Democratic Party Committee Abroad. We represent 9+ million American citizens who live and vote from abroad. Join us! #demsabroad",
+                "url": "https://t.co/wip1dW2zXX",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/wip1dW2zXX",
+                                "expanded_url": "http://www.DemocratsAbroad.org",
+                                "display_url": "DemocratsAbroad.org",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 26732,
+                "friends_count": 9089,
+                "listed_count": 449,
+                "created_at": "Thu Mar 26 15:38:07 +0000 2009",
+                "favourites_count": 58375,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 41838,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C6E2EE",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme2/bg.gif",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme2/bg.gif",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1444351255451734016/Mt2kgwkF_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1444351255451734016/Mt2kgwkF_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/26775504/1627781691",
+                "profile_link_color": "1F98C7",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "DAECF4",
+                "profile_text_color": "663B12",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": true,
+            "quoted_status_id": 1445106216758349832,
+            "quoted_status_id_str": "1445106216758349832",
+            "quoted_status": {
+                "created_at": "Mon Oct 04 19:19:05 +0000 2021",
+                "id": 1445106216758349832,
+                "id_str": "1445106216758349832",
+                "text": "A picture is worth a few trillion. https://t.co/zbAlpCWO2e",
+                "truncated": false,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [],
+                    "media": [
+                        {
+                            "id": 1445106213230981123,
+                            "id_str": "1445106213230981123",
+                            "indices": [
+                                35,
+                                58
+                            ],
+                            "media_url": "http://pbs.twimg.com/media/FA4MccZXsAM-lXa.jpg",
+                            "media_url_https": "https://pbs.twimg.com/media/FA4MccZXsAM-lXa.jpg",
+                            "url": "https://t.co/zbAlpCWO2e",
+                            "display_url": "pic.twitter.com/zbAlpCWO2e",
+                            "expanded_url": "https://twitter.com/KJP46/status/1445106216758349832/photo/1",
+                            "type": "photo",
+                            "sizes": {
+                                "small": {
+                                    "w": 358,
+                                    "h": 358,
+                                    "resize": "fit"
+                                },
+                                "thumb": {
+                                    "w": 150,
+                                    "h": 150,
+                                    "resize": "crop"
+                                },
+                                "large": {
+                                    "w": 358,
+                                    "h": 358,
+                                    "resize": "fit"
+                                },
+                                "medium": {
+                                    "w": 358,
+                                    "h": 358,
+                                    "resize": "fit"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "extended_entities": {
+                    "media": [
+                        {
+                            "id": 1445106213230981123,
+                            "id_str": "1445106213230981123",
+                            "indices": [
+                                35,
+                                58
+                            ],
+                            "media_url": "http://pbs.twimg.com/media/FA4MccZXsAM-lXa.jpg",
+                            "media_url_https": "https://pbs.twimg.com/media/FA4MccZXsAM-lXa.jpg",
+                            "url": "https://t.co/zbAlpCWO2e",
+                            "display_url": "pic.twitter.com/zbAlpCWO2e",
+                            "expanded_url": "https://twitter.com/KJP46/status/1445106216758349832/photo/1",
+                            "type": "photo",
+                            "sizes": {
+                                "small": {
+                                    "w": 358,
+                                    "h": 358,
+                                    "resize": "fit"
+                                },
+                                "thumb": {
+                                    "w": 150,
+                                    "h": 150,
+                                    "resize": "crop"
+                                },
+                                "large": {
+                                    "w": 358,
+                                    "h": 358,
+                                    "resize": "fit"
+                                },
+                                "medium": {
+                                    "w": 358,
+                                    "h": 358,
+                                    "resize": "fit"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "metadata": {
+                    "result_type": "popular",
+                    "iso_language_code": "en"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 1351234883776098311,
+                    "id_str": "1351234883776098311",
+                    "name": "Karine Jean-Pierre",
+                    "screen_name": "KJP46",
+                    "location": "Washington, DC",
+                    "description": "White House Principal Deputy Press Secretary.",
+                    "url": "https://t.co/NgUd6f90ER",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/NgUd6f90ER",
+                                    "expanded_url": "http://whitehouse.gov",
+                                    "display_url": "whitehouse.gov",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 111236,
+                    "friends_count": 832,
+                    "listed_count": 647,
+                    "created_at": "Mon Jan 18 18:29:01 +0000 2021",
+                    "favourites_count": 3769,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": true,
+                    "statuses_count": 1528,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "F5F8FA",
+                    "profile_background_image_url": null,
+                    "profile_background_image_url_https": null,
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1351235319014813699/XR3P0nmD_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1351235319014813699/XR3P0nmD_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1351234883776098311/1625155180",
+                    "profile_link_color": "1DA1F2",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": true,
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 11901,
+                "favorite_count": 34880,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "en"
+            },
+            "retweet_count": 21,
+            "favorite_count": 34,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Mon Oct 04 18:20:53 +0000 2021",
+            "id": 1445091570479476747,
+            "id_str": "1445091570479476747",
+            "text": "Looking more and more likely US govt is going to have start buying things on layaway. #DebtCeiling",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "DebtCeiling",
+                        "indices": [
+                            86,
+                            98
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": []
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 18320938,
+                "id_str": "18320938",
+                "name": "(((DeanObeidallah)))",
+                "screen_name": "DeanObeidallah",
+                "location": "",
+                "description": "Host: The Dean Obeidallah show @SiriusXM channel 127 weekdays 6-9PMET. Democrats are the REAL Patriots! Pls Sign up for my newsletter: https://t.co/Ci9MQGzLLT",
+                "url": "https://t.co/RgFqYSb6mT",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/RgFqYSb6mT",
+                                "expanded_url": "http://www.deanofradio.com",
+                                "display_url": "deanofradio.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/Ci9MQGzLLT",
+                                "expanded_url": "http://eepurl.com/hzionv",
+                                "display_url": "eepurl.com/hzionv",
+                                "indices": [
+                                    135,
+                                    158
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 127358,
+                "friends_count": 8994,
+                "listed_count": 1550,
+                "created_at": "Mon Dec 22 23:46:14 +0000 2008",
+                "favourites_count": 75784,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 172096,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "0099B9",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1325872539906809856/DN_XD2MN_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1325872539906809856/DN_XD2MN_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/18320938/1632588047",
+                "profile_link_color": "1B95E0",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "95E8EC",
+                "profile_text_color": "3C3940",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 15,
+            "favorite_count": 60,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Tue Oct 05 22:40:01 +0000 2021",
+            "id": 1445519171559690242,
+            "id_str": "1445519171559690242",
+            "text": "“It would be catastrophic to not pay the government’s bills,” Yellen said.\n\nUS Treasury @SecYellen warned that the… https://t.co/N7vuogfzZ4",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "SecYellen",
+                        "name": "Secretary Janet Yellen",
+                        "id": 1333171793201225728,
+                        "id_str": "1333171793201225728",
+                        "indices": [
+                            88,
+                            98
+                        ]
+                    }
+                ],
+                "urls": [
+                    {
+                        "url": "https://t.co/N7vuogfzZ4",
+                        "expanded_url": "https://twitter.com/i/web/status/1445519171559690242",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            116,
+                            139
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"https://buffer.com\" rel=\"nofollow\">Buffer</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 29097819,
+                "id_str": "29097819",
+                "name": "The Epoch Times",
+                "screen_name": "EpochTimes",
+                "location": "New York, USA",
+                "description": "Independent, award-winning reporting based on Truth and Tradition. Free newsletter: https://t.co/0F3JANwb8P | Telegram: https://t.co/Hmk1epY4Kv | Watch: https://t.co/M1G2gEVJmq",
+                "url": "https://t.co/udZgeB9zvZ",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/udZgeB9zvZ",
+                                "expanded_url": "https://subscribe.epochtimes.com/",
+                                "display_url": "subscribe.epochtimes.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/0F3JANwb8P",
+                                "expanded_url": "http://ept.ms/–Newsletters",
+                                "display_url": "ept.ms/–Newsletters",
+                                "indices": [
+                                    84,
+                                    107
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/Hmk1epY4Kv",
+                                "expanded_url": "http://t.me/epochtimes",
+                                "display_url": "t.me/epochtimes",
+                                "indices": [
+                                    120,
+                                    143
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/M1G2gEVJmq",
+                                "expanded_url": "http://epochtv.com",
+                                "display_url": "epochtv.com",
+                                "indices": [
+                                    153,
+                                    176
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 428247,
+                "friends_count": 80,
+                "listed_count": 2746,
+                "created_at": "Sun Apr 05 23:54:55 +0000 2009",
+                "favourites_count": 35989,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": true,
+                "statuses_count": 206013,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FFFFFF",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme4/bg.gif",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme4/bg.gif",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/954141295093698560/9x68uifu_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/954141295093698560/9x68uifu_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/29097819/1516660974",
+                "profile_link_color": "00218F",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "3C3940",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 14,
+            "favorite_count": 16,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Sep 29 15:27:13 +0000 2021",
+            "id": 1443235927455830024,
+            "id_str": "1443235927455830024",
+            "text": "Failure to raise the #DebtCeiling doesn't prevent the U. S. from paying its bills. Spending can be cut, or taxes in… https://t.co/92UP9fl1NT",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "DebtCeiling",
+                        "indices": [
+                            21,
+                            33
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/92UP9fl1NT",
+                        "expanded_url": "https://twitter.com/i/web/status/1443235927455830024",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "result_type": "popular",
+                "iso_language_code": "en"
+            },
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 56562803,
+                "id_str": "56562803",
+                "name": "Peter Schiff",
+                "screen_name": "PeterSchiff",
+                "location": "Puerto Rico",
+                "description": "Chief Economist & Global Strategist: https://t.co/OMmqdEJS2O  | \nChairman: https://t.co/Ib5G6n78js  |  Founder: https://t.co/rtQQUAUL5U , https://t.co/Y3k2NTM8Jo  |  Host: https://t.co/YAV1Kdqb51",
+                "url": "https://t.co/QaPiD7gJO4",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/QaPiD7gJO4",
+                                "expanded_url": "http://amzn.to/1nDylDr",
+                                "display_url": "amzn.to/1nDylDr",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/OMmqdEJS2O",
+                                "expanded_url": "http://Europac.com",
+                                "display_url": "Europac.com",
+                                "indices": [
+                                    37,
+                                    60
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/Ib5G6n78js",
+                                "expanded_url": "http://SchiffGold.com",
+                                "display_url": "SchiffGold.com",
+                                "indices": [
+                                    75,
+                                    98
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/rtQQUAUL5U",
+                                "expanded_url": "http://EpacFunds.com",
+                                "display_url": "EpacFunds.com",
+                                "indices": [
+                                    112,
+                                    135
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/Y3k2NTM8Jo",
+                                "expanded_url": "http://EuroPacBank.com",
+                                "display_url": "EuroPacBank.com",
+                                "indices": [
+                                    138,
+                                    161
+                                ]
+                            },
+                            {
+                                "url": "https://t.co/YAV1Kdqb51",
+                                "expanded_url": "http://SchiffRadio.com",
+                                "display_url": "SchiffRadio.com",
+                                "indices": [
+                                    172,
+                                    195
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 565603,
+                "friends_count": 269,
+                "listed_count": 5183,
+                "created_at": "Tue Jul 14 01:28:42 +0000 2009",
+                "favourites_count": 180,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 19753,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "FFFFFF",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1265705916298641408/qK7MHnk9_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1265705916298641408/qK7MHnk9_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/56562803/1600369965",
+                "profile_link_color": "003CA3",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "81ADE3",
+                "profile_text_color": "4977C7",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 393,
+            "favorite_count": 1966,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        }
+    ],
+    "search_metadata": {
+        "completed_in": 0.067,
+        "max_id": 0,
+        "max_id_str": "0",
+        "next_results": "?max_id=1443235927455830023&q=debtceiling&count=100&include_entities=1&result_type=popular",
+        "query": "debtceiling",
+        "count": 100,
+        "since_id": 0,
+        "since_id_str": "0"
+    }
+}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:munit="http://www.mulesoft.org/schema/mule/munit"
+	xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<munit:config name="rg-tweet-search-api-v1-test-suite.xml" />
+	<import doc:name="Import" doc:id="cd74781f-ad62-47aa-9afb-c614fea4b1bb" file="test-config-load.xml" />
+	<http:request-config name="RG-Twitter-Search-API-Config" doc:name="HTTP Request configuration" doc:id="74a3473d-925c-4357-8f5a-2b677c9e0db6" basePath="${http.basepath}" >
+		<http:request-connection host="${http.host}" port="${http.port}" />
+	</http:request-config>
+	<munit:test name="get-hashtags-Test" doc:id="634a900e-423e-4b68-91f9-67c0031c0653" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock twitter-hashtags-api-process-request" doc:id="0ad76e9a-2257-4831-93fc-a94ebbe78e55" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="twitter-hashtags-api-process-request" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsStream('sample_data\\twitter-api-hashtags-response.json')]" mediaType="application/json" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event with Query Parameters" doc:id="03035155-0b6c-4797-b70d-af9f090549d6" >
+				<munit:attributes value="#[{&#10;   'queryParameters' : {&#10;    'keyword' : 'mulesoft',&#10;    'hours' : 2&#10;}&#10;}]" />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to get:\tweets\hashtags:rg-tweet-search-api-v1-config" doc:id="ce9c3b6b-1d36-47a8-a590-791dad14bc14" name="get:\tweets\hashtags:rg-tweet-search-api-v1-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call to twitter-hashtags-api-process-request" doc:id="4ca9d23b-e3de-4797-b62a-f47ecc7c330f" processor="flow-ref" times="#[1]">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="twitter-hashtags-api-process-request" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+			<munit-tools:assert-that doc:name="Assert that size of Hashtag payload is equal to 2" doc:id="fc7d80b6-c32f-4585-b22d-405fe8ae0930" message="API Response is not correct" expression="#[sizeOf(payload.hashtags)]" is="#[MunitTools::equalTo(2)]"/>
+		</munit:validation>
+	</munit:test>
+	
+	<munit:test name="get-tweets-Test" doc:id="bc774142-381f-4dae-be11-831afc50d286" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock twitter-search-api-process-request" doc:id="e951de2e-f9b5-4765-bb79-7cfe50b5e455" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="twitter-search-api-process-request" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsStream('sample_data\\twitter-api-search-response.json')]" mediaType="application/json" />
+				</munit-tools:then-return>
+			
+</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Event with Query Parameters" doc:id="be101d7e-802d-492c-945a-21505aa6e9e4" >
+				<munit:attributes value="#[{
+&#10;   'queryParameters' : {
+&#10;    'keyword' : 'mulesoft',
+&#10;    'hours' : 2
+&#10;}
+&#10;}]" />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to get:\tweets:rg-tweet-search-api-v1-config" doc:id="0071284e-116a-4174-8412-f740de529930" name="get:\tweets:rg-tweet-search-api-v1-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call to twitter-search-api-process-request" doc:id="2593591c-3fb8-4bbc-b433-62b67c043a21" processor="flow-ref" times="#[1]">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="twitter-search-api-process-request" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+			<munit-tools:assert-that doc:name="Assert that size of Tweet payload is equal to 2" doc:id="6f9a2c82-6b6b-40a4-9c9d-3a0daaf2673c" message="API Response is not correct" expression="#[sizeOf(payload.tweets)]" is="#[MunitTools::equalTo(2)]"/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="tweet-search-bad-request-test" doc:id="94f87d50-dc6d-41a4-b0d9-c02240c0da20" >
+		<munit:enable-flow-sources >
+			<munit:enable-flow-source value="rg-tweet-search-api-v1-main" />
+		</munit:enable-flow-sources>
+		<munit:execution>
+			<try doc:name="Try" doc:id="dbbdad09-a56b-45fd-9777-b09beddda0ec" >
+				<http:request method="GET" doc:name="RG-Twitter-Search-API-BadRequest" doc:id="a705efd5-b55c-40db-9baa-4552303aa520" config-ref="RG-Twitter-Search-API-Config" path="/tweets">
+				<http:headers><![CDATA[#[{
+	'X-Client-Id' : 'test',
+	'X-Client-Secret' : 'test',
+	'X-Correlation-Id' : 1234
+}]]]></http:headers>
+			</http:request>
+				<error-handler >
+					<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="40de5975-7bc3-4210-9d52-54294c8a004a" />
+				</error-handler>
+			</try>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call-apikit-400-error-subflow" doc:id="885171d2-51b2-4381-9a41-998a6698845e" processor="flow-ref" times="#[1]">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="apikit-400-error-subflow" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+	
+	<munit:test name="hashtags-bad-request-test" doc:id="0e3baec1-de86-4dbc-9c38-89e994e9e7d6" >
+		<munit:enable-flow-sources >
+			<munit:enable-flow-source value="rg-tweet-search-api-v1-main" />
+		</munit:enable-flow-sources>
+		<munit:execution>
+			<try doc:name="Try" doc:id="45a726b7-6d8b-4d2d-9364-64d9fd6786dd" >
+				<http:request method="GET" doc:name="RG-Twitter-Hashtags-API-BadRequest" doc:id="7d5b3334-c4b8-4d53-b89f-5f07d0e85a4b" config-ref="RG-Twitter-Search-API-Config" path="/tweets/hashtags">
+				<http:headers><![CDATA[#[{
+	'X-Correlation-Id' : 1234,
+	'X-Client-Secret' : 'test',
+	'X-Client-Id' : 'test'
+}]]]></http:headers>
+			
+</http:request>
+				<error-handler >
+					<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="94256e73-8ba7-4e3f-971c-9650d41e9cc2" />
+				</error-handler>
+			</try>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call-apikit-400-error-subflow" doc:id="d78c76cc-4b4d-47a8-a358-252e0257c106" processor="flow-ref" times="#[1]">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="apikit-400-error-subflow" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+	
+	<munit:test name="apikit-method-not-allowed-test" doc:id="f64baae9-06b3-411b-a761-5f804428a04f" >
+		<munit:enable-flow-sources >
+			<munit:enable-flow-source value="rg-tweet-search-api-v1-main" />
+		</munit:enable-flow-sources>
+		<munit:execution>
+			<http:request method="POST" doc:name="RG-Twitter-API-Kit-MethodNotAllowed" doc:id="f29eed62-7542-4e20-9f15-6233b5ae4185" config-ref="RG-Twitter-Search-API-Config" path="/tweets">
+				<http:headers><![CDATA[#[{
+	'X-Correlation-Id' : 1234
+}]]]></http:headers>
+				<http:response-validator >
+					<http:success-status-code-validator values="0..599" />
+				</http:response-validator>
+			
+
+</http:request>
+			
+		
+</munit:execution>
+		<munit:validation>
+			<munit-tools:assert-that doc:name="Assert that http status is 405" doc:id="e4b969db-b27a-4ff0-99d6-67ed6e87a38f" is="#[MunitTools::equalTo(405)]" expression="#[attributes.statusCode]"/>
+
+		</munit:validation>
+	
+</munit:test>
+
+<munit:test name="apikit-not-found-test" doc:id="41b9be87-f65f-4dc3-8636-4b22174c39ed" >
+		<munit:enable-flow-sources >
+			<munit:enable-flow-source value="rg-tweet-search-api-v1-main" />
+		</munit:enable-flow-sources>
+		<munit:execution>
+			<http:request method="GET" doc:name="RG-Twitter-API-Kit-NotFound" doc:id="9ef16af0-3390-497d-8889-e6748821f751" config-ref="RG-Twitter-Search-API-Config" path="/notfound">
+				<http:headers><![CDATA[#[{
+	'X-Correlation-Id' : 1234
+}]]]></http:headers>
+				<http:response-validator >
+					<http:success-status-code-validator values="0..599" />
+				</http:response-validator>
+			
+
+</http:request>
+			
+		
+</munit:execution>
+		<munit:validation>
+			<munit-tools:assert-that doc:name="Assert that http status is 404" doc:id="913f5756-b011-4dc6-b579-9b21d505809d" is="#[MunitTools::equalTo(404)]" expression="#[attributes.statusCode]"/>
+
+		</munit:validation>
+	
+</munit:test>
+
+<munit:test name="apikit-not-acceptable-test" doc:id="af10e64d-65eb-4057-bde6-dcd2f382e894" >
+		<munit:enable-flow-sources >
+			<munit:enable-flow-source value="rg-tweet-search-api-v1-main" />
+		</munit:enable-flow-sources>
+		<munit:execution>
+			<http:request method="GET" doc:name="RG-Twitter-API-Kit-NotAcceptable" doc:id="a9ee6d27-2ef5-4f53-b131-8f5e46f1604c" config-ref="RG-Twitter-Search-API-Config" path="/tweets">
+				<http:headers><![CDATA[#[{
+	'X-Client-Id' : 'test',
+	'X-Client-Secret' : 'test',
+	'X-Correlation-Id' : 1234,
+	'Accept' : 'application/xml'
+}]]]></http:headers>
+				<http:query-params ><![CDATA[#[{
+	keyword : 'test',
+	hours: 1
+}]]]></http:query-params>
+				<http:response-validator >
+					<http:success-status-code-validator values="0..599" />
+				</http:response-validator>
+			
+
+</http:request>
+			
+		
+</munit:execution>
+		<munit:validation>
+			<munit-tools:assert-that doc:name="Assert that http status is 406" doc:id="a8ebddc5-f9bb-403e-83ea-05d4f163ca2d" is="#[MunitTools::equalTo(406)]" expression="#[attributes.statusCode]"/>
+
+		</munit:validation>
+	
+</munit:test>
+
+
+</mule>
