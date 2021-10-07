@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:oauth="http://www.mulesoft.org/schema/mule/oauth"
-	xmlns:secure-properties="http://www.mulesoft.org/schema/mule/secure-properties"
-	xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http"
-	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
-	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+<mule xmlns:api-gateway="http://www.mulesoft.org/schema/mule/api-gateway"
+	xmlns:oauth="http://www.mulesoft.org/schema/mule/oauth"
+	xmlns:secure-properties="http://www.mulesoft.org/schema/mule/secure-properties" xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
 http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd 
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
 http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/schema/mule/secure-properties/current/mule-secure-properties.xsd
-http://www.mulesoft.org/schema/mule/oauth http://www.mulesoft.org/schema/mule/oauth/current/mule-oauth.xsd">
+http://www.mulesoft.org/schema/mule/oauth http://www.mulesoft.org/schema/mule/oauth/current/mule-oauth.xsd
+http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/mule/api-gateway/current/mule-api-gateway.xsd">
 	<configuration-properties doc:name="Configuration properties" doc:id="3da40f20-9e9a-4a54-b7d1-e59e31ca5cbf" file="config-${mule.env}.properties" />
 	<global-property doc:name="Global Property" doc:id="4d79304c-dbb1-4375-be95-e675b7735088" name="mule.env" value="local" />
 	<http:listener-config name="rg-tweet-search-api-v1-httpListenerConfig" basePath="${http.basepath}">
@@ -29,6 +30,7 @@ http://www.mulesoft.org/schema/mule/oauth http://www.mulesoft.org/schema/mule/oa
 			</http:authentication>
 		</http:request-connection>
 	</http:request-config>
+	<api-gateway:autodiscovery apiId="${api.id}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="05f40470-e22f-4ed7-8362-4024e2db68be" flowRef="rg-tweet-search-api-v1-main" />
 	<sub-flow name="apikit-400-error-subflow" doc:id="26c4056a-e17a-40fc-82ee-5ef03726663c" >
 		<ee:transform doc:name="Transform Message" doc:id="136bea77-a479-43e8-b1f6-d0e3cf3f8d8a" >
 			<ee:message >

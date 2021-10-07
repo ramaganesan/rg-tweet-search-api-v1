@@ -82,12 +82,9 @@ else acc
 		</choice>
 	</sub-flow>
 	<sub-flow name="twitter-search-api-process-request" doc:id="01f56cc9-bf66-45ca-bcde-d0cab9f35fc0" >
-		<try doc:name="Try" doc:id="8558fa52-7d01-41f4-8c9c-25a399209e7e" >
-			<set-variable value="#['mixed']" doc:name="Set Variable-resultType" doc:id="188c7f89-07e2-43ce-b8dc-a5d137282540" variableName="resultType"/>
-			<flow-ref doc:name="twitter-search-api-httprequest" doc:id="7863e910-5a7e-4188-a487-470a631a5bf4" name="twitter-search-api-httprequest"/>
-			<flow-ref doc:name="twitter-search-process-results" doc:id="8cbb2e2c-9f28-42af-b166-5b92f65108ff" name="twitter-search-process-results"/>
-			<error-handler ref="twitter-api-request-Error_Handler"/>
-		</try>
+	    <set-variable value="#['mixed']" doc:name="Set Variable-resultType" doc:id="e050c0af-a004-4548-978e-6c0e66d8eb11" variableName="resultType"/>
+			<flow-ref doc:name="twitter-search-api-httprequest" doc:id="ae55e2fd-912d-40ea-adc3-7c92194101e7" name="twitter-search-api-httprequest"/>
+			<flow-ref doc:name="twitter-search-process-results" doc:id="48a8abe6-80b1-405d-a2ab-6d7e1533444a" name="twitter-search-process-results"/>
 	</sub-flow>
 	
 </mule>

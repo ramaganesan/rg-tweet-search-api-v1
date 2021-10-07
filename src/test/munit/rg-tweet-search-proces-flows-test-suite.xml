@@ -19,14 +19,12 @@
 			</munit-tools:mock-when>
 		</munit:behavior>
 		<munit:execution >
-			<munit:set-event doc:name="Set Variables Keyword and Hours" doc:id="05a20776-a40e-461c-b1b4-dba39a04778e" >
-				<munit:variables >
-					<munit:variable key="keyword" value="mulesoft" />
-					<munit:variable key="hours" value="10" />
-				</munit:variables>
+			<munit:set-event doc:name="Set Event with Query Parameters" doc:id="5b77456e-a130-4326-9e72-2fdae73fed23" >
+				<munit:attributes value="#[{&#10;   'queryParams' : {&#10;    'keyword' : 'mulesoft',&#10;    'hours' : 2&#10;}&#10;}]" />
+
 			</munit:set-event>
-			<set-variable value="#['TWEETS']" doc:name="Set Variable-searchType" doc:id="91ba1037-1ab3-42e2-a5bd-ad250d7e1ca1" variableName="searchType"/>
-			<flow-ref doc:name="Flow-ref to twitter-search-api-process-request" doc:id="4972fcf1-3ba3-4c2a-94af-758e96050958" name="twitter-search-api-process-request"/>
+			<set-variable value="#['TWEETS']" variableName="searchType" doc:name="Set Variable-searchType"></set-variable>
+			<flow-ref doc:name="Flow-ref to get:\tweets:rg-tweet-search-api-v1-config" doc:id="9c7b8ed7-5718-4e46-a7ff-8681297471fd" name="get:\tweets:rg-tweet-search-api-v1-config"/>
 		</munit:execution>
 		<munit:validation >
 			<munit-tools:verify-call doc:name="Verify Set API Response Transform Component is called" doc:id="f0b769a7-4514-44e7-a451-10b54d7ca5d3" processor="ee:transform" times="#[1]">
@@ -48,14 +46,12 @@
 			</munit-tools:mock-when>
 		</munit:behavior>
 		<munit:execution >
-			<munit:set-event doc:name="Set Variables Keyword and Hours" doc:id="59d032dd-91a5-4c57-b7a4-d46f7d235182" >
-				<munit:variables >
-					<munit:variable key="keyword" value="mulesoft" />
-					<munit:variable key="hours" value="10" />
-				</munit:variables>
+			<munit:set-event doc:name="Set Event with Query Parameters" doc:id="3d9848a9-ac25-486d-9589-be3eb18bfdf1" >
+				<munit:attributes value="#[{&#10;   'queryParams' : {&#10;    'keyword' : 'mulesoft',&#10;    'hours' : 2&#10;}&#10;}]" />
+
 			</munit:set-event>
-			<set-variable value="#['TWEETS']" doc:name="Set Variable-searchType" doc:id="64f71f32-b9a9-47c2-8f8d-536bd96c5057" variableName="searchType"/>
-			<flow-ref doc:name="Flow-ref to twitter-search-api-process-request" doc:id="606b63a0-d7ef-416a-86f5-21044bf2d2f5" name="twitter-search-api-process-request"/>
+			<set-variable value="#['TWEETS']" doc:name="Set Variable-searchType" doc:id="c2c21464-4c63-4443-94a2-9dcef7672af6" variableName="searchType"/>
+			<flow-ref doc:name="Flow-ref to get:\tweets:rg-tweet-search-api-v1-config" doc:id="6ca2d861-8415-42f9-91ab-8086efb15d30" name="get:\tweets:rg-tweet-search-api-v1-config"/>
 		</munit:execution>
 		<munit:validation >
 			<munit-tools:verify-call doc:name="Verify Set Set Payload as Empty Tweets Transform Component is called" doc:id="0cbc7d9f-1198-4658-a3b2-89a6039e65b8" processor="ee:transform" times="#[1]">
@@ -80,14 +76,12 @@
 </munit-tools:mock-when>
 		</munit:behavior>
 		<munit:execution >
-			<munit:set-event doc:name="Set Variables Keyword and Hours" doc:id="a08a5209-4726-4826-a154-561965b832bb" >
-				<munit:variables >
-					<munit:variable key="keyword" value="mulesoft" />
-					<munit:variable key="hours" value="10" />
-				</munit:variables>
+			<munit:set-event doc:name="Set Event with Query Parameters" doc:id="615581d6-9b0e-490b-a9a8-541ab08a98f5" >
+				<munit:attributes value="#[{&#10;   'queryParams' : {&#10;    'keyword' : 'mulesoft',&#10;    'hours' : 2&#10;}&#10;}]" />
+
 			</munit:set-event>
 			<try doc:name="Try" doc:id="97a63565-10f5-4104-b8d1-b19373f40c17" >
-				<flow-ref doc:name="Flow-ref to twitter-search-api-process-request" doc:id="99d9b2fe-9145-42bb-80ea-753954592bc2" name="twitter-search-api-process-request" />
+				<flow-ref doc:name="Flow-ref to get:\tweets:rg-tweet-search-api-v1-config" doc:id="12c645f7-24da-49f1-bbab-c002d2d014c6" name="get:\tweets:rg-tweet-search-api-v1-config"/>
 				<error-handler >
 					<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="d2103819-126e-4682-92aa-1047e8d272cf" />
 				</error-handler>
@@ -118,14 +112,12 @@
 </munit-tools:mock-when>
 		</munit:behavior>
 		<munit:execution >
-			<munit:set-event doc:name="Set Variables Keyword and Hours" doc:id="33e5cb71-623a-4210-9d44-439a35d897a9" >
-				<munit:variables >
-					<munit:variable key="keyword" value="mulesoft" />
-					<munit:variable key="hours" value="10" />
-				</munit:variables>
+			<munit:set-event doc:name="Set Event with Query Parameters" doc:id="517cac87-2df9-4847-b084-824d5c817bbc" >
+				<munit:attributes value="#[{&#10;   'queryParams' : {&#10;    'keyword' : 'mulesoft',&#10;    'hours' : 2&#10;}&#10;}]" />
+
 			</munit:set-event>
 			<try doc:name="Try" doc:id="452a87fe-d6e4-4389-8475-a89bb5580feb" >
-				<flow-ref doc:name="Flow-ref to twitter-search-api-process-request" doc:id="86a7f603-468f-4c0e-9b45-c935ecf14f94" name="twitter-search-api-process-request" />
+				<flow-ref doc:name="Flow-ref to get:\tweets:rg-tweet-search-api-v1-config" doc:id="e948fdcd-8739-4228-b4af-8da052ca2d08" name="get:\tweets:rg-tweet-search-api-v1-config"/>
 				<error-handler >
 					<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="a9b27692-92bf-48a6-a4e5-fd851c93d0ab" />
 				</error-handler>
@@ -165,14 +157,12 @@
 		
 </munit:behavior>
 		<munit:execution >
-			<munit:set-event doc:name="Set Variables Keyword and Hours" doc:id="dc2016bd-9d85-4571-a30e-451913538a78" >
-				<munit:variables >
-					<munit:variable key="keyword" value="mulesoft" />
-					<munit:variable key="hours" value="10" />
-				</munit:variables>
+			<munit:set-event doc:name="Set Event with Query Parameters" doc:id="0cdd679f-13ac-43d4-80cf-eb94a9303689" >
+				<munit:attributes value="#[{&#10;   'queryParams' : {&#10;    'keyword' : 'mulesoft',&#10;    'hours' : 2&#10;}&#10;}]" />
+
 			</munit:set-event>
 			<try doc:name="Try" doc:id="41b57af4-fed2-42db-afe4-2c82946743ad" >
-				<flow-ref doc:name="Flow-ref to twitter-search-api-process-request" doc:id="433849f8-88b7-4aac-9624-39e1ee36eebc" name="twitter-search-api-process-request" />
+				<flow-ref doc:name="Flow-ref to get:\tweets:rg-tweet-search-api-v1-config" doc:id="073a69bc-538c-4cf9-8b99-f98e92113bda" name="get:\tweets:rg-tweet-search-api-v1-config"/>
 				<error-handler >
 					<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="6e62453e-d2bf-4f8d-945d-b7461247b640" />
 				</error-handler>
@@ -191,12 +181,10 @@
 	
 	<munit:test name="twitter-search-process-results-Test" doc:id="22fe971b-74ab-49c8-8cd8-77f2a618f79b" description="Test">
 		<munit:execution >
-			<munit:set-event doc:name="Set Variables Keyword and Hours" doc:id="bf8e5604-26b5-48ab-8c5c-682a1b704a00" >
+			<munit:set-event doc:name="Set Event with variable hours" doc:id="d05b65d9-d843-49d5-85c1-7e178e8ae3e4" >
 				<munit:variables >
-					<munit:variable key="keyword" value="mulesoft" />
 					<munit:variable key="hours" value="3" />
 				</munit:variables>
-
 			</munit:set-event>
 			<flow-ref doc:name="create-twittersearch-api-mockdata-dynamiccreatedate" doc:id="bf734f1e-b9b5-4127-8fde-74ee7a2dca74" name="create-twittersearch-api-mockdata-dynamiccreatedate"/>
 			<flow-ref doc:name="Flow-ref to twitter-search-process-results" doc:id="9c3dfc3e-e9ec-427a-a4db-3815e9d879fb" name="twitter-search-process-results"/>

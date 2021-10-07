@@ -14,6 +14,10 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:request-connection host="${http.host}" port="${http.port}" />
 	</http:request-config>
 	<munit:test name="get-hashtags-Test" doc:id="634a900e-423e-4b68-91f9-67c0031c0653" description="Test">
+		<munit:enable-flow-sources >
+			<munit:enable-flow-source value="get:\tweets\hashtags:rg-tweet-search-api-v1-config" />
+			<munit:enable-flow-source value="rg-tweet-search-api-v1-main" />
+		</munit:enable-flow-sources>
 		<munit:behavior >
 			<munit-tools:mock-when doc:name="Mock twitter-hashtags-api-process-request" doc:id="0ad76e9a-2257-4831-93fc-a94ebbe78e55" processor="flow-ref">
 				<munit-tools:with-attributes >
@@ -24,11 +28,17 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 				</munit-tools:then-return>
 			</munit-tools:mock-when>
 		</munit:behavior>
-		<munit:execution >
-			<munit:set-event doc:name="Set Event with Query Parameters" doc:id="03035155-0b6c-4797-b70d-af9f090549d6" >
-				<munit:attributes value="#[{&#10;   'queryParameters' : {&#10;    'keyword' : 'mulesoft',&#10;    'hours' : 2&#10;}&#10;}]" />
-			</munit:set-event>
-			<flow-ref doc:name="Flow-ref to get:\tweets\hashtags:rg-tweet-search-api-v1-config" doc:id="ce9c3b6b-1d36-47a8-a590-791dad14bc14" name="get:\tweets\hashtags:rg-tweet-search-api-v1-config"/>
+		<munit:execution>
+			<http:request method="GET" doc:name="RG-Twitter-Search-API-HasgTags" doc:id="81dc51e9-e6e8-4bb6-b7ff-79cd587e8fae" config-ref="RG-Twitter-Search-API-Config" path="/tweets/hashtags" >
+				<http:headers ><![CDATA[#[{
+	'X-Client-Id' : 'test',
+	'X-Client-Secret' : 'test',
+	'X-Correlation-Id' : 1234
+}]]]></http:headers>
+				<http:query-params ><![CDATA[#[{
+	keyword : 'mulesoft'
+}]]]></http:query-params>
+			</http:request>
 		</munit:execution>
 		<munit:validation >
 			<munit-tools:verify-call doc:name="Verify call to twitter-hashtags-api-process-request" doc:id="4ca9d23b-e3de-4797-b62a-f47ecc7c330f" processor="flow-ref" times="#[1]">
@@ -41,6 +51,10 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</munit:test>
 	
 	<munit:test name="get-tweets-Test" doc:id="bc774142-381f-4dae-be11-831afc50d286" description="Test">
+		<munit:enable-flow-sources >
+			<munit:enable-flow-source value="rg-tweet-search-api-v1-main" />
+			<munit:enable-flow-source value="get:\tweets:rg-tweet-search-api-v1-config" />
+		</munit:enable-flow-sources>
 		<munit:behavior >
 			<munit-tools:mock-when doc:name="Mock twitter-search-api-process-request" doc:id="e951de2e-f9b5-4765-bb79-7cfe50b5e455" processor="flow-ref">
 				<munit-tools:with-attributes >
@@ -53,16 +67,19 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 </munit-tools:mock-when>
 		</munit:behavior>
 		<munit:execution >
-			<munit:set-event doc:name="Set Event with Query Parameters" doc:id="be101d7e-802d-492c-945a-21505aa6e9e4" >
-				<munit:attributes value="#[{
-&#10;   'queryParameters' : {
-&#10;    'keyword' : 'mulesoft',
-&#10;    'hours' : 2
-&#10;}
-&#10;}]" />
-			</munit:set-event>
-			<flow-ref doc:name="Flow-ref to get:\tweets:rg-tweet-search-api-v1-config" doc:id="0071284e-116a-4174-8412-f740de529930" name="get:\tweets:rg-tweet-search-api-v1-config"/>
-		</munit:execution>
+			<http:request method="GET" doc:name="RG-Twitter-Search-API-Tweets" doc:id="5fd22325-4a27-49f5-80e5-9c071cfead94" config-ref="RG-Twitter-Search-API-Config" path="/tweets">
+				<http:headers><![CDATA[#[{
+	'X-Client-Id' : 'test',
+	'X-Client-Secret' : 'test',
+	'X-Correlation-Id' : 1234
+}]]]></http:headers>
+				<http:query-params><![CDATA[#[{
+	keyword : 'mulesoft',
+	hours: 1
+}]]]></http:query-params>
+			</http:request>
+		
+</munit:execution>
 		<munit:validation >
 			<munit-tools:verify-call doc:name="Verify call to twitter-search-api-process-request" doc:id="2593591c-3fb8-4bbc-b433-62b67c043a21" processor="flow-ref" times="#[1]">
 				<munit-tools:with-attributes >

@@ -32,13 +32,13 @@ fun processSearchTweets() = payload.statuses reduce ((item, acc = []) ->
 	if ((sizeOf(acc default[]) < p('twitter.searchapi.defaultapiresult'))
 	)
    acc + if(isEmpty(item.entities.hashtags)) [] else item.entities.hashtags.text
-else flatten(acc)
+else acc
 )
 ---
 {
 	requestId : correlationId,
 	keyword : vars.keyword,
-	hashtags : processSearchTweets() distinctBy $
+	hashtags : processSearchTweets() flatMap $ distinctBy $
 }]]></ee:set-payload>
 					</ee:message>
 				</ee:transform>
@@ -46,12 +46,9 @@ else flatten(acc)
 		</choice>
 	</sub-flow>
 	<sub-flow name="twitter-hashtags-api-process-request" doc:id="7415a11b-c070-4d18-a2d1-aeea741ddf6d" >
-		<try doc:name="Try" doc:id="a16c96b7-1297-476a-9ef3-287922fc2775" >
-			<set-variable value="#['popular']" doc:name="Set Variable-resultType" doc:id="e7ea0fee-543f-47b5-ab43-9746132717b7" variableName="resultType"/>
-			<flow-ref doc:name="twitter-search-api-httprequest" doc:id="a17b95b1-d4ca-4270-b80a-6446d75b8dbf" name="twitter-search-api-httprequest"/>
-			<flow-ref doc:name="twitter-hasgtags-process-results" doc:id="b0eccc9c-d839-4997-9f9e-e50df52af837" name="twitter-hasgtags-process-results"/>
-			<error-handler ref="twitter-api-request-Error_Handler"/>
-		</try>
+		<set-variable value="#['popular']" doc:name="Set Variable-resultType" doc:id="e7ea0fee-543f-47b5-ab43-9746132717b7" variableName="resultType" />
+		<flow-ref doc:name="twitter-search-api-httprequest" doc:id="a17b95b1-d4ca-4270-b80a-6446d75b8dbf" name="twitter-search-api-httprequest" />
+		<flow-ref doc:name="twitter-hasgtags-process-results" doc:id="b0eccc9c-d839-4997-9f9e-e50df52af837" name="twitter-hasgtags-process-results" />
 	</sub-flow>
 	
 	</mule>

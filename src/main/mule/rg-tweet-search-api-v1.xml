@@ -107,10 +107,12 @@ output application/json
     <flow name="get:\tweets\hashtags:rg-tweet-search-api-v1-config">
 		<set-variable value="#[attributes.queryParams.'keyword']" doc:name="Set Variable-keyword" doc:id="98f99471-0197-4c57-a9a4-707eb8dcbd69" variableName="keyword" />
 		<flow-ref doc:name="twitter-hashtags-api-process-request" doc:id="2551319b-dc1c-46c8-8f81-6c55d680fa42" name="twitter-hashtags-api-process-request"/>
+		<error-handler ref="twitter-api-request-Error_Handler"/>
     </flow>
     <flow name="get:\tweets:rg-tweet-search-api-v1-config">
 		<set-variable value="#[attributes.queryParams.'keyword']" doc:name="Set Variable-keyword" doc:id="278d37cb-2218-4290-bbb1-efa01fc9a126" variableName="keyword"/>
 		<set-variable value="#[attributes.queryParams.'hours']" doc:name="Set Variable-hours" doc:id="374a82f1-a820-4e6f-9272-001de0ea51a2" variableName="hours"/>
 		<flow-ref doc:name="twitter-search-api-process-request" doc:id="9255551d-c98d-45b3-834e-7ff8776c6c0a" name="twitter-search-api-process-request"/>
+		<error-handler ref="twitter-api-request-Error_Handler"/>
     </flow>
 </mule>
