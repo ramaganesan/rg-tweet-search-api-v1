@@ -16,7 +16,7 @@ http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/m
 	<http:listener-config name="rg-tweet-search-api-v1-httpListenerConfig" basePath="${http.basepath}">
         <http:listener-connection host="${http.host}" port="${http.port}" connectionIdleTimeout="${http.connectionIdleTimeout-msec}"/>
     </http:listener-config>
-    <apikit:config name="rg-tweet-search-api-v1-config" api="resource::0083d055-9230-4420-9463-cb57e41e2fb4:rg-tweet-search-api-v1:1.0.2:raml:zip:rg-tweet-search-api-v1.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+    <apikit:config name="rg-tweet-search-api-v1-config" api="resource::0083d055-9230-4420-9463-cb57e41e2fb4:rg-tweet-search-api-v1:1.0.7:raml:zip:rg-tweet-search-api-v1.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
 	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="d23bd55d-b002-4b3e-a52b-e12f6253fda2" file="secure-${mule.env}.properties" key="${mule.encryptionkey}">
 		<secure-properties:encrypt algorithm="Blowfish" />
 	</secure-properties:config>

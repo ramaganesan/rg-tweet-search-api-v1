@@ -61,7 +61,7 @@
 		<dependency>
 			<groupId>0083d055-9230-4420-9463-cb57e41e2fb4</groupId>
 			<artifactId>rg-tweet-search-api-v1</artifactId>
-			<version>1.0.2</version>
+			<version>1.0.7</version>
 			<classifier>raml</classifier>
 			<type>zip</type>
 		</dependency>
