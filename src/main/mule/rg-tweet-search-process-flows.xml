@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/compression http://www.mulesoft.org/schema/m
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<sub-flow name="twitter-search-api-httprequest" doc:id="31a09e35-ea28-4472-a9e3-b031ea8becf2" >
 		<logger level="INFO" doc:name="Logger-HttpRequest" doc:id="f9380ab1-351b-4bb7-9d19-b8ffb11c8c8c" message="Calling Twitter Search Endpoint with Keyword #[vars.keyword]" category="com.acme.social"/>
-		<http:request method="GET" doc:name="Twitter-Standard-SearchAPI-Request" doc:id="77f27705-d013-40a4-b91c-ab202206c582" config-ref="Twitter-SearchAPI-Http-Request-Config" path="${twitter.searchapi.path}" sendCorrelationId="ALWAYS" correlationId="#[correlationId]">
+		<http:request method="GET" doc:name="Twitter-Standard-SearchAPI-Request" doc:id="77f27705-d013-40a4-b91c-ab202206c582" config-ref="Twitter-SearchAPI-Http-Request-Config" path="${twitter.searchapi.path}" sendCorrelationId="ALWAYS" correlationId="#[correlationId]" responseTimeout="${twitter.searchapi.responseTimeout-inmsec}">
 			<http:headers ><![CDATA[#[{
 	'Accept-Encoding' : 'gzip',
 	'Accept' : 'application/json'
