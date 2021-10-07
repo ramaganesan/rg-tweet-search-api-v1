@@ -59,6 +59,25 @@
 			<munit-tools:assert-that doc:name="Assert that status Ready is No" doc:id="ded57c4f-376c-42e7-b7e0-dfcf01864d6a" is="#[MunitTools::equalToIgnoringCase('NO')]" expression="#[payload.ready]"/>
 		</munit:validation>
 	</munit:test>
+	<munit:test name="api-health-ready-check-test-suite-rg-tweet-search-api-v1-ErrorTest" doc:id="dda5947c-3e21-4b1d-87e6-cc457a1b42b2" >
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock Twitter Status Check Endpoint with Error" doc:id="29cdd25f-edf5-4f0b-86a8-1305f48fde8b" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Twitter-Status-Endpoint" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:error typeId="HTTP:CONNECTIVITY" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<munit:set-event doc:name="Set Empty Event" doc:id="bfa54556-70a3-4b4d-a542-01a0690b9f54" />
+			<flow-ref doc:name="rg-tweet-search-api-v1-ready" doc:id="01d5d334-f361-42fa-9298-902756e4b91e" name="rg-tweet-search-api-v1-ready"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-that doc:name="Assert that status Ready is No" doc:id="a843e0cb-fe6f-441a-968a-ad6f9774accb" is="#[MunitTools::equalToIgnoringCase('NO')]" expression="#[payload.ready]" />
+		</munit:validation>
+	</munit:test>
 
 
 </mule>

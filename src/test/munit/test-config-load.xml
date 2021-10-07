@@ -116,7 +116,6 @@ var updatedstatuses = sampleData.statuses map ((item, index) -> item update "cre
 }]]></ee:set-payload>
 					</ee:message>
 				</ee:transform>
-		<logger level="INFO" doc:name="Logger" doc:id="870f7096-94a5-4122-8483-20df0551a558" message='#[payload.statuses."created_at"]' category="com.acme.social"/>
 				
 	
 </flow>

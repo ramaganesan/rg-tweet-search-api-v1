@@ -1,0 +1,4 @@
+%dw 2.0
+
+type auto_b8765592_b88c_454e_8b79_cd1056d04768_Output_Payload = {| ready: String |}
+
